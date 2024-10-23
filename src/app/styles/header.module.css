@@ -82,11 +82,7 @@
 
     .headerContainer{
         padding: 10px 80px;
-        height: 100 wv;
-    }
-
-    .brandName {
-        justify-content: right; /* Center the brand name on mobile */
-        
+        height: 40vh;
+        padding-left: 2%;
     }
 }

@@ -1,6 +1,8 @@
+/* All these info are available in the Buzzvel Prototype at Figma */
+/* SectionHero CSS Module */
+
 .heroSection {
     padding: 0px 80px;
-
     align-items: center;
     justify-content: space-between;
 }
@@ -28,13 +30,10 @@
     color: #0F172A; 
     width: 600px;
     height: 77px;
-    gap: 0px;
-    opacity: 0px;
     margin-top: 2%;
 }
 
 .quoteButton {
-    margin-left: 3%;
     padding: 20px 24px;
     width: 306px;
     height: 64px;
@@ -51,6 +50,7 @@
     justify-content: center;
     font-size: 24px;
     gap: 2rem;
+    margin-top: 2%;
 }
 
 .quoteButton:hover {
@@ -69,9 +69,53 @@
 }
 
 .heroImage {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.heroQuoteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3%;
+}
+
+.heroQuote {
+    width: 600px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #0F172A;
+}
+
+.heroRwanda {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.heroRwandaText {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroRwandaName {
+    font-weight: bold;
+    color: #171717;
+}
+
+.heroRwandaLink {
+    color: rgba(71, 85, 105, 1);
+    text-decoration: none;
+}
+
+.heroRwandaLink:hover{
+    color:  rgba(88, 28, 135, 1);
+    transition: background-color 1s;
 }
 
 /* Mobile Styles */
@@ -94,5 +138,38 @@
 
     .heroImageContainer {
         margin-top: 24px;
+    }
+
+    .heroSubtitle {
+        width: 343px;
+        height: auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .quoteButton {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 24px;
+        width: 306px;
+        height: 64px;
+        border: 2px solid #581C87;
+        border-radius: 100px;
+    }
+
+    .heroQuote{
+        width: 343px;
+        height: 68px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 22px;
     }
 }

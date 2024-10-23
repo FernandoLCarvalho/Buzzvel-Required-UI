@@ -1,5 +1,5 @@
 .background-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     height: 650px;

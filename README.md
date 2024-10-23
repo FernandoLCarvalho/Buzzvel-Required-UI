@@ -14,3 +14,5 @@ Repository for a Figma prototype created by Buzzvel FE that I'll need to reprodu
         There is a component that involves all the pages that will be rendered in this project, which is /src/app/layout.tsx. It serves, as its names already says, to create and control the layout of everything that will be rendered in this app. 
 
 For this job, I used some third-party libraries, such as Prime Flex and React Icons.
+
+    # It's important to say that many of the CSS used in this project were grabbed from the Figma Prototipe that Buzzvel made.
