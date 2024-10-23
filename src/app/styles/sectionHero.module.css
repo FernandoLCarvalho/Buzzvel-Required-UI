@@ -1,6 +1,3 @@
-/* All these info are available in the Buzzvel Prototype at Figma */
-/* SectionHero CSS Module */
-
 .heroSection {
     padding: 0px 80px;
     align-items: center;
@@ -33,6 +30,13 @@
     margin-top: 2%;
 }
 
+.quoteButtonContainer {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-top: 2%;
+}
+
 .quoteButton {
     padding: 20px 24px;
     width: 306px;
@@ -50,7 +54,6 @@
     justify-content: center;
     font-size: 24px;
     gap: 2rem;
-    margin-top: 2%;
 }
 
 .quoteButton:hover {
@@ -149,6 +152,10 @@
         font-size: 18px;
         line-height: 29px;
         text-align: center;
+    }
+
+    .quoteButtonContainer {
+        justify-content: center;
     }
 
     .quoteButton {
