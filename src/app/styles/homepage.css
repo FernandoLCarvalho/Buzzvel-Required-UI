@@ -1,0 +1,35 @@
+.background-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 650px; /* Altura conforme o Figma */
+    width: 630px;  /* Largura conforme o Figma */
+    background-color: rgba(186, 230, 253, 1); /* Cor da elipse */
+    border-radius: 50% 100% 100% 100% / 100% 0% 100% 100%; /* Ajuste do border-radius para criar a forma */
+
+    z-index: -1; /* Mantém o fundo atrás do conteúdo */
+}
+
+.background-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço */
+}
+
+/* Media Query para Mobile */
+@media (max-width: 768px) {
+  .background-container {
+    position: absolute;
+    width: 85vw; /* Largura adaptada para dispositivos móveis */
+    height: 350px;
+  }
+
+  .background-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

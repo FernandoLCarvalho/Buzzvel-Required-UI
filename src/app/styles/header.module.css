@@ -1,0 +1,74 @@
+/* Header Container */
+.headerContainer {
+    padding: 24px 80px;
+}
+
+/* Brand Name */
+.brandName {
+    font-weight: bold;
+    font-size: 32px;
+    color: rgba(15, 23, 42, 1);
+    align-items: center;
+    display: flex;
+}
+
+/* Navigation Menu */
+.navMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+}
+
+.navList li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Phone Number and Button */
+.phoneButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.phoneNumber {
+    color: #007BFF;
+    font-weight: 500;
+}
+
+.quoteButton {
+    padding: 10px 16px;
+    border-radius: 23px;
+    border: 2px solid #7B3FE4;
+    color: #7B3FE4;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+}
+
+.quoteButton:hover {
+    background: #7B3FE4;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navMenu,
+    .phoneButtonContainer {
+        display: none; /* Hide nav and phone elements on mobile */
+    }
+
+    .brandName {
+        justify-content: center; /* Center the brand name on mobile */
+    }
+}
