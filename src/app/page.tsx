@@ -10,9 +10,6 @@ import './styles/homepage.css';
 export default function HomePage() {
   return (
     <>
-       <div className="background-container">
-        <img src="/Mask masked.svg" alt="Man working on solar panels" className="background-image" />
-      </div>
       <Header />
       <SectionHero />
       <SectionPickSun />

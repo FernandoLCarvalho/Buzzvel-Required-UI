@@ -1,0 +1,98 @@
+.heroSection {
+    padding: 0px 80px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heroTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    align-items: flex-start;
+    line-height: 80px;
+}
+
+.heroTitle {
+    font-size: 72px;
+    font-weight: bold;
+    color: #171717;
+}
+
+.heroSubtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.4px;
+    font-style: normal;
+    color: #0F172A; 
+    width: 600px;
+    height: 77px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 2%;
+}
+
+.quoteButton {
+    margin-left: 3%;
+    padding: 20px 24px;
+    width: 306px;
+    height: 64px;
+    border-radius: 100px;
+    border: 2px solid #581C87;
+    color: rgba(88, 28, 135, 1);
+    font-weight: 500;
+    box-sizing: border-box;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24px;
+    gap: 2rem;
+}
+
+.quoteButton:hover {
+    background: rgba(88, 28, 135, 1);
+    color: rgba(252, 211, 77, 1);
+    transition: background-color 0.5s ease;
+}
+
+.arrowIcon {
+    font-size: 1.25rem;
+}
+
+.heroImageContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroImage {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .heroSection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+    }
+
+    .heroTextContainer {
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .heroImageContainer {
+        margin-top: 24px;
+    }
+}
