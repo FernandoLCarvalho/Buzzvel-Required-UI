@@ -9,7 +9,7 @@ Repository for a Figma prototype created by Buzzvel FE that I'll need to reprodu
 
         My approach is to create the Home Page in the page.tsx inside /src/app.
 
-        The Home Page is divided into several componentes that can be found inside /src/app/components. They are all imported inside /src/app/page.tsx; 
+        The Home Page is divided into several components that can be found inside /src/app/components. They are all imported inside /src/app/page.tsx; 
 
         There is a component that involves all the pages that will be rendered in this project, which is /src/app/layout.tsx. It serves, as its names already says, to create and control the layout of everything that will be rendered in this app. 
 
