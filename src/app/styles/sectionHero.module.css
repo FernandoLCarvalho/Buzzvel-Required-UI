@@ -139,11 +139,18 @@
 
     .heroTitle {
         font-size: 40px;
+        text-align: center;
+        line-height: 38.4px;
+        justify-content: center;
     }
 
+    .heroSubtitle{
+        margin-top: 0;
+    }
     a .heroTextContainer {
         text-align: center;
         line-height: 50px;
+        justify-content: center;
     }
 
     .heroImageContainer {
