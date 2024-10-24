@@ -14,13 +14,36 @@
     z-index: -1;
 }
 
-.ellipseBackground {
+.ellipseBackgroundLeft {
     position: absolute;
     width: 710px;
-    height: 711px;
+    height: 680px;
     left: -7%;
     margin-top: 7%;
     z-index: -1;
+}
+
+.ellipseBackgroundRight {
+    position: absolute;
+    width: 590px;
+    height: 610px;
+    right: 0%;
+    top: 310px;
+    z-index: -1;
+}
+
+.desktopImage {
+    position: absolute;
+    width: 1520px;
+    height: 854px;
+    top: 270px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('/Desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
 }
 
 .sectionCaption {
@@ -41,8 +64,7 @@
 .sectionParagraph {
     width: 900px;
     height: auto;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 20px;
     line-height: 36px;
@@ -51,19 +73,37 @@
     margin-top: 16px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .pickSunSection {
         padding: 100px 3%;
         margin-top: 0;
     }
 
-    
-    .ellipseBackground {
+
+    .ellipseBackgroundLeft {
         position: absolute;
         width: 249.86px;
         height: 250.22px;
         left: -35%;
         top: 0px;
         margin-top: 60%;
+    }
+
+    .ellipseBackgroundRight {
+        position: absolute;
+        width: 209.74px;
+        height: 210.1px;
+        right: -45%;
+        top: 300px;
+        z-index: -1;
+    }
+
+    .desktopImage {
+        width: 600px;
+        height: 400px;
+        top: 300px;
+        left: 54%;
+        transform: translateX(-50%);
+        background-image: url('/Desktop Mobile.svg');
     }
 }
