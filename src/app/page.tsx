@@ -13,10 +13,10 @@ export default function HomePage() {
       <Header />
       <SectionHero />
       <SectionPickSun />
-      <SectionServices />
+      {/* <SectionServices />
       <SectionPowerful />
       <SectionTestimonials />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

@@ -1,0 +1,69 @@
+.pickSunSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.backgroundContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.ellipseBackground {
+    position: absolute;
+    width: 710px;
+    height: 711px;
+    left: -7%;
+    margin-top: 7%;
+    z-index: -1;
+}
+
+.sectionCaption {
+    color: rgba(217, 119, 6, 1);
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.sectionTitle {
+    font-family: Roboto, sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 61.6px;
+    text-align: center;
+    color: #171717;
+}
+
+.sectionParagraph {
+    width: 900px;
+    height: auto;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #0F172A;
+    margin-top: 16px;
+}
+
+@media (max-width: 700px) {
+    .pickSunSection {
+        padding: 100px 3%;
+        margin-top: 0;
+    }
+
+    
+    .ellipseBackground {
+        position: absolute;
+        width: 249.86px;
+        height: 250.22px;
+        left: -35%;
+        top: 0px;
+        margin-top: 60%;
+    }
+}
