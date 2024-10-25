@@ -7,7 +7,7 @@ import { FiArrowRight } from 'react-icons/fi';
 export default function Header() {
     return (
         <>
-            <Head>   {/* In order to give the head metatags at this component, it's needed to import this component  */}
+            <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Responsive header for Soller with navigation menu and contact details." />
                 <meta name="keywords" content="Header, Navigation, Soller, Next, React, PrimeFlex" />

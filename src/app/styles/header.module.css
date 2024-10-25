@@ -49,21 +49,18 @@
 }
 
 .phoneButtonContainer img {
-    position: absolute; /* Para controlar o posicionamento em relação ao pai */
-     /* Ajustar conforme necessário */
-    left: 15%; /* Ajustar para alinhar no limite da elipse */
+    position: absolute; 
+    left: 15%;
 }
 
 .phoneButtonContainer span {
-    position: absolute; /* Para controlar o posicionamento em relação ao pai */
-     /* Ajustar conforme necessário */
-    left: 25%; /* Ajustar para alinhar no limite da elipse */
+    position: absolute; 
+    left: 25%; 
 }
 
 .phoneButtonContainer button {
-    position: absolute; /* Para controlar o posicionamento em relação ao pai */
-     /* Ajustar conforme necessário */
-    left: 45%; /* Ajustar para alinhar no limite da elipse */
+    position: absolute; 
+    left: 45%; 
 }
 
 .phoneNumber {

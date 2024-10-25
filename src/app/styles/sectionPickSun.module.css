@@ -81,18 +81,17 @@
 
 @media (max-width: 1000px) {
     .pickSunSection {
-        padding: 100px 3%;
+        padding: 20% 0 0 0;
         margin: 0;
         height: 70vh;
-        
     }
 
     .ellipseBackgroundLeft {
         position: absolute;
-        width: 249.86px;
-        height: 250.22px;
-        left: -3%;
-        top: 0px;
+        width: 200px;
+        height: 200px;
+        left: -25%;
+        top: 4%;
         margin-top: 53%;
     }
 
@@ -101,13 +100,13 @@
         width: 209.74px;
         height: 210.1px;
         right: -37%;
-        top: 300px;
+        top: 31%;
     }
 
     .desktopImage {
         width: 600px;
         height: 400px;
-        top: 300px;
+        top: 26%;
         left: 50%;
         transform: translateX(-50%);
         background-image: url('/Desktop Mobile.svg');
@@ -128,8 +127,9 @@
 
     .sectionParagraph {
         font-size: 1rem;
-        line-height: 22px;
-        width: 343px;
+        font-weight: 400;
+        line-height: 22.4px;
+        width: 320px;
         height: 112px;
         text-align: center;
     }
