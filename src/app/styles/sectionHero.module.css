@@ -1,0 +1,198 @@
+.heroSection {
+    padding: 0px 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heroTextContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+    align-items: flex-start;
+    line-height: 80px;
+}
+
+.heroTitle {
+    font-size: 72px;
+    font-weight: bold;
+    color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 600px;
+    height: 159px;
+}
+
+.heroSubtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.4px;
+    font-style: normal;
+    color: #0F172A;
+    width: 600px;
+    height: 77px;
+    margin-top: 2%;
+}
+
+.quoteButtonContainer {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.quoteButton {
+    padding: 20px 24px;
+    width: 306px;
+    height: 64px;
+    border-radius: 100px;
+    border: 2px solid #581C87;
+    color: rgba(88, 28, 135, 1);
+    font-weight: 500;
+    box-sizing: border-box;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24px;
+    gap: 2rem;
+}
+
+.quoteButton:hover {
+    background: rgba(88, 28, 135, 1);
+    color: rgba(252, 211, 77, 1);
+    transition: background-color 0.5s ease;
+}
+
+.arrowIcon {
+    font-size: 1.25rem;
+}
+
+.heroImageContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroImage {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.heroQuoteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3%;
+}
+
+.heroQuote {
+    width: 600px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #0F172A;
+}
+
+.heroRwanda {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.heroRwandaText {
+    display: flex;
+    flex-direction: column;
+}
+
+.heroRwandaName {
+    color: #171717;
+}
+
+.heroRwandaLink {
+    color: rgba(71, 85, 105, 1);
+    text-decoration: none;
+}
+
+.heroRwandaLink:hover {
+    color: rgba(88, 28, 135, 1);
+    transition: background-color 1s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .heroSection {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .heroTitle {
+        font-size: 40px;
+        text-align: center;
+        line-height: 38.4px;
+        justify-content: center;
+        width: 343px;
+        height: 88px;
+    }
+
+    .heroSubtitle {
+        margin-top: 0;
+    }
+
+    a .heroTextContainer {
+        text-align: center;
+        line-height: 50px;
+        justify-content: center;
+    }
+
+    .heroImageContainer {
+        margin-top: 24px;
+    }
+
+    .heroSubtitle {
+        width: 343px;
+        height: auto;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .quoteButtonContainer {
+        justify-content: center;
+    }
+
+    .quoteButton {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 24px;
+        width: 306px;
+        height: 64px;
+        border: 2px solid #581C87;
+        border-radius: 100px;
+    }
+
+    .heroQuote {
+        width: 343px;
+        height: 68px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 22px;
+    }
+}

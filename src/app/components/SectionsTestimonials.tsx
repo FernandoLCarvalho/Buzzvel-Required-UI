@@ -1,4 +1,4 @@
-export default function Container(){
+export default function SectionServices(){
     return(
         <section>
             Section 5
