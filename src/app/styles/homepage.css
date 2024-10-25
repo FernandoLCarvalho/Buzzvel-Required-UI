@@ -1,15 +1,21 @@
 .background-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 650px;
-    width: 650px;  
-    background-color: rgba(186, 230, 253, 1);
-    border-radius: 50% 90% 100% 100% / 100% 0% 100% 100%;
-    z-index: -1; /*
-    This is fundamental because when I use this property with -1, it guarantee that if another
-    element conflicts in space with this background, this background will be behind the other element
-    */
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.foreground-image {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: 0;
 }
 
 /* Media Query para Mobile */

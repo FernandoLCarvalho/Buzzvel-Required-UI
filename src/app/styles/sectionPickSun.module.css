@@ -82,15 +82,16 @@
 @media (max-width: 1000px) {
     .pickSunSection {
         padding: 100px 3%;
-        margin-top: 0;
+        margin: 0;
         height: 70vh;
+        
     }
 
     .ellipseBackgroundLeft {
         position: absolute;
         width: 249.86px;
         height: 250.22px;
-        left: -32%;
+        left: -3%;
         top: 0px;
         margin-top: 53%;
     }

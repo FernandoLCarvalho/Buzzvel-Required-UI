@@ -20,6 +20,8 @@
     justify-content: left;
     color: rgba(15, 23, 42, 1);
     padding-left: 1%;
+    margin: 0;
+    padding-right: 0;
 }
 
 .navList {
@@ -37,9 +39,31 @@
 /* Phone Number and Button */
 .phoneButtonContainer {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: right;
-    gap: 24px;
+    justify-content: center;
+    padding: 0px;
+    gap: 16px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.phoneButtonContainer img {
+    position: absolute; /* Para controlar o posicionamento em relação ao pai */
+     /* Ajustar conforme necessário */
+    left: 15%; /* Ajustar para alinhar no limite da elipse */
+}
+
+.phoneButtonContainer span {
+    position: absolute; /* Para controlar o posicionamento em relação ao pai */
+     /* Ajustar conforme necessário */
+    left: 25%; /* Ajustar para alinhar no limite da elipse */
+}
+
+.phoneButtonContainer button {
+    position: absolute; /* Para controlar o posicionamento em relação ao pai */
+     /* Ajustar conforme necessário */
+    left: 45%; /* Ajustar para alinhar no limite da elipse */
 }
 
 .phoneNumber {
@@ -75,12 +99,13 @@
 
 /* Mobile Styles */
 @media (max-width: 1300px) {
+
     .navMenu,
     .phoneButtonContainer {
-        display: none; 
+        display: none;
     }
 
-    .headerContainer{
+    .headerContainer {
         padding: 10px 80px;
         height: 60vh;
         padding-left: 2%;
@@ -88,11 +113,14 @@
 }
 
 @media (max-width: 750px) {
+
     .navMenu,
     .phoneButtonContainer {
-        display: none; /* Hide nav and phone elements on tablet */
+        display: none;
+        /* Hide nav and phone elements on tablet */
     }
-    .headerContainer{
+
+    .headerContainer {
         padding: 10px 80px;
         height: 60vh;
         padding-left: 2%;
@@ -100,12 +128,14 @@
 }
 
 @media (max-width: 450px) {
+
     .navMenu,
     .phoneButtonContainer {
-        display: none; /* Hide nav and phone elements on mobile */
+        display: none;
+        /* Hide nav and phone elements on mobile */
     }
 
-    .headerContainer{
+    .headerContainer {
         padding: 10px 80px;
         height: 40vh;
         padding-left: 2%;
