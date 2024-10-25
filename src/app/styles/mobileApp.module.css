@@ -1,0 +1,291 @@
+.mobileAppContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100vw;
+}
+
+.mobileAppBorderArround {
+    padding: 1%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobileAppContent {
+    width: 300px;
+    height: 538px;
+    background: rgba(224, 242, 254, 1);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 7% 0 7%;
+    margin: 0;
+    z-index: 0;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid white;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.title {
+    width: 50%;
+    height: 15px;
+    background-color: rgba(186, 230, 253, 1);
+    align-self: center;
+    border-radius: 5px;
+    margin-left: 15%;
+}
+
+.featureCardsContainer {
+    margin-top: 10%;
+    width: 100%;
+    position: relative;
+    height: 150px;
+
+}
+
+.featureCard {
+    position: absolute;
+    width: 110px;
+    height: 150px;
+    background: #FFFFFF;
+    border: 2px solid #38BDF8;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.featureCard:nth-child(1) {
+    left: 0;
+}
+
+.featureCard:nth-child(2) {
+    left: 130px;
+}
+
+.featureCard:nth-child(3) {
+    left: 240px;
+}
+
+.ellipse {
+    position: absolute;
+}
+
+.ellipse3 {
+    position: absolute;
+    left: 0%;
+    right: 11.8%;
+    top: 30.83%;
+    bottom: 0%;
+    width: 70%;
+    height: 100%;
+}
+
+.ellipse5 {
+    position: absolute;
+    left: 40%;
+    top: 0%;
+    bottom: 74.89%;
+    width: 45%;
+    height: 60%;
+}
+
+.largeCircle {
+    position: absolute;
+    right: 27.85%;
+    top: 52.1%;
+    width: 60px;
+    height: 60px;
+    background: rgba(186, 230, 253, 1);
+    border-radius: 50%;
+}
+
+.smallCircle {
+    position: absolute;
+    left: 64.56%;
+    bottom: 76.47%;
+    width: 30px;
+    height: 30px;
+    background: rgba(251, 191, 36, 1);
+    border-radius: 50%;
+}
+
+.star {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 1;
+    width: 60%;
+    z-index: 1;
+}
+
+.ellipseForStar {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 45%;
+    height: 50%;
+    z-index: 0;
+    clip-path: circle(60% at 78% 40.5%);
+    /* A tentative of cutting this circle in the area of the star */
+}
+
+.lastFeatureCard {
+    transform: translateX(15%);
+}
+
+
+.bar {
+    width: 187.2px;
+    height: 14.4px;
+    background-color: white;
+    align-self: center;
+    border-radius: 5px;
+    margin-top: 25%;
+}
+
+.lastFeatureContainer {
+    position: relative;
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 10%;
+    border-radius: 20px 20px 0 0;
+    bottom: 0;
+}
+
+.largeCircleInLastFeature {
+    position: absolute;
+    left: -4.9%;
+    right: 47.9%;
+    top: -22.45%;
+    bottom: 39.29%;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border: 9px solid rgba(224, 242, 254, 1);
+    border-radius: 50%;
+}
+
+.smallCircleInLastFeature {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 50px;
+    left: 160px;
+    background: rgba(251, 191, 36, 1);
+    border-radius: 50%;
+}
+
+.triangle {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-top: 100px solid rgba(186, 230, 253, 1);
+    transform: rotate(90deg);
+}
+
+.bottomMenu {
+    width: 300px;
+    /* Needs to be the same width of the mobileAppContent */
+    height: 115px;
+    background: rgba(224, 242, 254, 1);
+    border-top: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottomMenuIcon {
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+
+    .mobileAppBorderArround {
+        padding: 2%;
+    }
+
+    .mobileAppContent {
+        width: 300px;
+        height: 600px;
+    }
+
+    .featureCard {
+        width: 100px;
+        height: 130px;
+    }
+
+    .featureCard:nth-child(2) {
+        left: 115px;
+    }
+
+    .featureCard:nth-child(3) {
+        left: 230px;
+    }
+
+    .bottomMenu {
+        width: 300px;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .mobileAppBorderArround {
+        padding: 2%;
+    }
+
+    .mobileAppContent {
+        width: 220px;
+        height: 458px;
+    }
+
+    .featureCard {
+        width: 75px;
+        height: 100px;
+    }
+
+    .featureCard:nth-child(2) {
+        left: 95px;
+    }
+
+    .featureCard:nth-child(3) {
+        left: 180px;
+    }
+
+    .ellipseForStar {
+        position: absolute;
+        top: 10%;
+        right: 2%;
+        width: 45%;
+        height: 50%;
+        z-index: 0;
+        clip-path: circle(60% at 82% 42.5%);
+    }
+
+    .bar {
+        margin-top: 0;
+    }
+
+    .bottomMenu {
+        width: 220px;
+        height: 60.34px;
+    }
+}

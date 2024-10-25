@@ -133,7 +133,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 40px;
+        padding: 20px;
     }
 
     .heroTitle {
@@ -141,11 +141,14 @@
         text-align: center;
         line-height: 38.4px;
         justify-content: center;
+        width: 343px;
+        height: 88px;
     }
 
-    .heroSubtitle{
+    .heroSubtitle {
         margin-top: 0;
     }
+
     a .heroTextContainer {
         text-align: center;
         line-height: 50px;

@@ -14,9 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="background-container">
-          <img src="/Mask masked.svg" alt="Man working on solar panels" className="background-image" />
-        </div>
         {children}
       </body>
     </html>
