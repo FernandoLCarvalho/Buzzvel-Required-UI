@@ -11,7 +11,7 @@ import Head from 'next/head';
 export default function HomePage() {
   return (
     <>
-     <Head>
+      <Head>
         <title>Soller - Get the Sun to Power Your Home</title>
         <meta name="description" content="Get the Sun to Power Your Home with Soller. Discover our solutions for sustainable and efficient solar energy to make your home energy independent." />
         <meta name="keywords" content="solar energy, home power, renewable energy, solar panels, soller, sustainable energy" />
@@ -26,7 +26,7 @@ export default function HomePage() {
         <meta name="twitter:description" content="Discover Soller’s solutions for sustainable and efficient solar energy." />
         <meta name="twitter:image" content="/Mask masked.svg" />
       </Head>
-      
+
       <div className="background-container">
         <img src="/Elipse 1.svg" alt="Ellipse Background" className="background-image" />
         <img src="/Mask masked.svg" alt="Man working on solar panels" className="foreground-image" />
@@ -35,8 +35,8 @@ export default function HomePage() {
       <SectionHero />
       <SectionPickSun />
       <SectionServices />
-      {/* <SectionPowerful />
-      <SectionTestimonials />
+      <SectionPowerful />
+      {/*  <SectionTestimonials />
       <Footer /> */}
     </>
   );

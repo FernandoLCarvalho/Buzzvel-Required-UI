@@ -19,13 +19,15 @@
 .backgroundImg {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     z-index: 0;
     object-fit: cover;
 }
+
 .mobileAppWrapper {
     position: relative;
     z-index: 1;
+    top: 6%;
 }
 
 .gridContainer>*:not(.backgroundImg) {
@@ -34,9 +36,72 @@
     will be over the img */
 }
 
-.servicesSections{
+.servicesArticle {
+    align-items: start;
+}
+
+.servicesCaption {
+    width: 1180px;
+    height: 22px;
+
+    font-size: 20px;
+    line-height: 22px;
+    color: #D97706;
+}
+
+.servicesMainHeadline {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 79.2px;
+    text-align: left;
+}
+
+.servicesSecondaryHeadline {
+    width: 1180px;
+    height: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    /* identical to box height, or 180% */
+
+    color: #0F172A;
+}
+
+.servicesSections {
     margin-top: 10%;
     margin-left: 0;
+}
+
+.servicesSectionsRow {
+    margin-bottom: 10% !important;
+}
+
+.servicesSectionsRow h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+    color: #0F172A;
+    margin-bottom: 2%;
+}
+
+.servicesSectionsRow p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #0F172A;
+    width: 566px;
+    height: 58px;
+    gap: 0px;
+    opacity: 0px;
+
+
 }
 
 @media (max-width: 1300px) {
@@ -54,4 +119,80 @@
         object-fit: contain;
 
     }
+
+    .servicesCaptain {
+        justify-content: center;
+    }
+
+    .servicesSectionsRow p {
+        height: auto;
+    }
+
+    .servicesSecondaryHeadline{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .servicesArticle {
+        align-items: normal;
+    }
+
+    .servicesCaption {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .servicesSections{
+        margin-bottom: 10%;
+    }
+
+    .servicesMainHeadline {
+        font-size: 2rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .servicesSecondaryHeadline {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .servicesSecondaryHeadline {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 22.4px;
+        width: 343px;
+        height: 68px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Roboto';
+    }
+
+    .servicesSectionsRow h3{
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 22px;
+        text-align: center;
+        margin-top: 30%;
+    }
+
+    .servicesSectionsRow p{
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 300px) {
+    .servicesMainHeadline{
+        font-size: 1rem;
+    }
+
 }
