@@ -1,6 +1,6 @@
 import styles from '../../styles/mobileApp.module.css';
 
-export default function MobileApp() {
+export default function MobileApp2() {
     return (
         <div className={styles.mobileAppContainer}>
             <div className={styles.mobileAppBorderArround}>

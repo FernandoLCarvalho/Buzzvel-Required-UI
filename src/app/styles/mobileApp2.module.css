@@ -1,0 +1,113 @@
+.mobileAppContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobileAppBorderArround {
+    padding: 1%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobileAppContent {
+    width: 350px;
+    height: 630px;
+    background: rgba(224, 242, 254, 1);
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 7% 0 7%;
+    margin: 0;
+    z-index: 0;
+}
+
+.featureCardsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+
+    height: 100px;
+    position: relative;
+}
+
+.featureCardCircle {
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.firstCircle {
+    left: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.secondCircle {
+    left: 12.5%;
+    width: 80px;
+    height: 80px;
+}
+
+.thirdCircle {
+    left: 23%;
+    width: 80px;
+    height: 80px;
+
+}
+
+.bottomMenu {
+    width: 350px;
+    /* Needs to be the same width of the mobileAppContent */
+    height: 100px;
+    background: rgba(224, 242, 254, 1);
+    border-top: 3px solid rgba(255, 255, 255, 1);
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottomMenuIcon {
+    height: 50px;
+}
+
+
+
+@media (max-width: 700px) {
+
+    .mobileAppBorderArround {
+        padding: 2%;
+    }
+
+    .mobileAppContent {
+        width: 220px;
+        height: 450px;
+    }
+
+    .bottomMenu {
+        width: 220px;
+        height: 60.34px;
+    }
+
+    .firstCircle {
+      
+    }
+
+    .secondCircle {
+   
+    }
+
+    .thirdCircle {
+   
+       
+    }
+
+}

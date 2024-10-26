@@ -36,8 +36,8 @@ export default function HomePage() {
       <SectionPickSun />
       <SectionServices />
       <SectionPowerful />
-      {/*  <SectionTestimonials />
-      <Footer /> */}
+      <SectionTestimonials />
+       {/* <Footer /> */}
     </>
   );
 }

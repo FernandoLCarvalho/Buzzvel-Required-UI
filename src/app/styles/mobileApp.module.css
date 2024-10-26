@@ -19,7 +19,7 @@
 
 .mobileAppContent {
     width: 300px;
-    height: 538px;
+    height: 570px;
     background: rgba(224, 242, 254, 1);
     border-radius: 20px 20px 0 0;
     display: flex;
@@ -159,7 +159,7 @@
 .lastFeatureContainer {
     position: relative;
     width: 100%;
-    height: 25%;
+    height: 30%;
     overflow: hidden;
     background-color: white;
     margin-top: 10%;
@@ -194,8 +194,6 @@
     position: absolute;
     right: 0%;
     bottom: 0%;
-    width: 0;
-    height: 0;
     border-left: 100px solid transparent;
     border-top: 100px solid rgba(186, 230, 253, 1);
     transform: rotate(90deg);
@@ -246,7 +244,38 @@
     }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 550px) {
+    .mobileAppContent {
+        width: 300px;
+        height: 540px;
+    }
+
+    .lastFeatureContainer {
+        height: 26.55%;
+    }
+
+    .largeCircleInLastFeature {
+        height: 130px;
+        width: 130px;
+        border: 7px solid rgba(224, 242, 254, 1);
+    }
+
+    .smallCircleInLastFeature {
+        width: 30px;
+        height: 30px;
+        top: 25%;
+        left: 60%;
+    }
+
+    .triangle {
+        width: 25px;
+        height: 25px;
+        border-left: 100px solid transparent;
+        border-top: 100px solid rgba(186, 230, 253, 1);
+    }
+}
+
+@media (max-width: 500px) {
 
     .mobileAppBorderArround {
         padding: 2%;
@@ -254,7 +283,11 @@
 
     .mobileAppContent {
         width: 220px;
-        height: 458px;
+        height: 450px;
+    }
+
+    .mobileAppWrapper {
+        left: 5%;
     }
 
     .featureCard {
@@ -280,6 +313,30 @@
         clip-path: circle(60% at 82% 42.5%);
     }
 
+    .lastFeatureContainer {
+        height: 24.3%;
+    }
+
+    .largeCircleInLastFeature {
+        height: 100px;
+        width: 100px;
+        border: 7px solid rgba(224, 242, 254, 1);
+    }
+
+    .smallCircleInLastFeature {
+        width: 25px;
+        height: 25px;
+        top: 25%;
+        left: 60%;
+    }
+
+    .triangle {
+        width: 25px;
+        height: 25px;
+        border-left: 70px solid transparent;
+        border-top: 70px solid rgba(186, 230, 253, 1);
+    }
+
     .bar {
         margin-top: 0;
     }
@@ -287,5 +344,46 @@
     .bottomMenu {
         width: 220px;
         height: 60.34px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mobileAppContent {
+        width: 220px;
+        height: 400px;
+    }
+
+    .lastFeatureContainer {
+        height: 14.6%;
+    }
+
+    .largeCircleInLastFeature {
+        height: 60px;
+        width: 60px;
+        border: 5px solid rgba(224, 242, 254, 1);
+    }
+
+    .smallCircleInLastFeature {
+        width: 25px;
+        height: 25px;
+        top: 25%;
+        left: 40%;
+    }
+
+    .triangle {
+        border-left: 50px solid transparent;
+        border-top: 50px solid rgba(186, 230, 253, 1);
+    }
+
+    .featureCard:nth-child(1) {
+        left: 0;
+    }
+    
+    .featureCard:nth-child(2) {
+        left: 90px;
+    }
+    
+    .featureCard:nth-child(3) {
+        left: 170px;
     }
 }
