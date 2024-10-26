@@ -43,7 +43,6 @@
 .servicesCaption {
     width: 1180px;
     height: 22px;
-
     font-size: 20px;
     line-height: 22px;
     color: #D97706;
@@ -121,23 +120,24 @@
         margin-bottom: 20px;
     }
 
-    .servicesCaptain {
-        justify-content: center;
+    .servicesCaption{
+        text-align: start;
     }
-
+  
     .servicesSectionsRow p {
         height: auto;
     }
 
     .servicesSecondaryHeadline{
         height: auto;
+        text-align: start;
     }
 
     .gridContainer{
         min-width: 80%;
         width: 80%;
         position: relative;
-        left: 40%;
+        left: 20%;
     }
 
 }
@@ -164,6 +164,7 @@
     }
 
     .servicesSecondaryHeadline {
+        min-width: 100%;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -210,7 +211,7 @@
     }
 
     .sectionPowerful{
-        margin-top: 20%;
+        margin-top: 100%;
     }
 
 }
