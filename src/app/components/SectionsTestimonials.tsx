@@ -84,7 +84,7 @@ const prevCard = () => {
                     <section className={styles.testimonialCardsSection}>
                         <div
                             className={`${styles.cardsWrapper} ${styles.transitionEffect}`}
-                            style={{ transform: `translateX(-${currentIndex * 383}px)` }}
+                            style={{ transform: `translateX(-${currentIndex * 384}px)` }}
                         >
                             {cardsData.concat(cardsData).map((card, index) => (
                                 <Cards

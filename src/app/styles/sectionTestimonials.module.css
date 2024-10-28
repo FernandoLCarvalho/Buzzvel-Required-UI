@@ -151,7 +151,7 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1200px) {
     .sectionTestimonialsContainer {
         margin-top: 15%;
         padding: 5% 0 5% 5%;
@@ -220,4 +220,29 @@
         font-size: 1.5rem;
     }
 
+    .cardsWrapper{
+        gap:28px; /* needed a bigger gap on this class to fill the space when user slides the cards
+        and keep the card space like in the prototype
+        */
+    }
+}
+
+@media (max-width: 300px) {
+    .textArticle .mainHeadline{
+        height: auto;
+    }
+
+    .textArticle .paragraph {
+        height: auto;
+    }
+    
+    .quoteButton{
+        white-space: nowrap;
+        font-size: 1.1rem;
+        gap: 5%;
+    }
+
+    .cardsWrapper{
+        gap: 238px;
+    }
 }

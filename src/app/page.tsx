@@ -26,6 +26,8 @@ export default function HomePage() {
         <meta name="twitter:title" content="Soller - Get the Sun to Power Your Home" />
         <meta name="twitter:description" content="Discover Soller’s solutions for sustainable and efficient solar energy." />
         <meta name="twitter:image" content="/Mask masked.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Soller Team" />
       </Head>
 
       <div className="background-container">

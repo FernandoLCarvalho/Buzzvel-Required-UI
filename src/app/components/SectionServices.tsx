@@ -4,24 +4,6 @@ import MobileApp from './sectionServices-components/mobileApp';
 
 export default function SectionServices() {
     return (
-        <>
-            <Head> {/* This part only refers to SEO scripts that refers only to this very section*/}
-                <script type="application/ld+json">
-                    {`
-                    {
-                      "@context": "https://schema.org",
-                      "@type": "Service",
-                      "name": "Personalized Services",
-                      "description": "Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et. Auctor turpis semper id sit ornare maecenas lectus sed.",
-                      "provider": {
-                        "@type": "Organization",
-                        "name": "Soller"
-                      }
-                    }
-                    `}
-                </script>
-            </Head>
-
             <section style={{ padding: '2% 0' }}>
                 <div className={`grid ${styles.servicesContainer}`} style={{ margin: '0' }}>
                     <div className={`col-12 sm:col-3 ${styles.firstDiv}`} style={{ padding: 0 }}>
@@ -65,6 +47,5 @@ export default function SectionServices() {
                     </div>
                 </div>
             </section>
-        </>
     );
 }

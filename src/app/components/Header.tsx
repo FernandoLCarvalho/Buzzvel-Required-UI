@@ -6,15 +6,6 @@ import { FiArrowRight } from 'react-icons/fi';
 
 export default function Header() {
     return (
-        <>
-            <Head>
-                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta name="description" content="Responsive header for Soller with navigation menu and contact details." />
-                <meta name="keywords" content="Header, Navigation, Soller, Next, React, PrimeFlex" />
-                <meta name="author" content="Soller Team" />
-                <title>Soller - Header</title>
-            </Head>
-
             <header className={styles.headerContainer}>
                 <div className="grid p-nogutter">
                     {/* Brand Name */}
@@ -43,6 +34,5 @@ export default function Header() {
                     </div>
                 </div>
             </header>
-        </>
     );
 }
