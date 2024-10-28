@@ -1,0 +1,223 @@
+.sectionTestimonialsContainer {
+    padding: 3% 0 3% 3%;
+    /* just important to remember, the order is top, right, bottom and left */
+    background-color: rgba(88, 28, 135, 1);
+    height: auto;
+}
+
+.topSection {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.textArticle {
+    padding: 0;
+
+}
+
+.caption {
+    color: rgba(252, 211, 77, 1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+
+}
+
+.mainHeadline {
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 61.6px;
+    text-align: left;
+    color: white;
+    width: 814px;
+    height: 62px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 1%;
+}
+
+.paragraph {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: white;
+    width: 814px;
+    height: 72px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: 3%;
+}
+
+.quoteButtonContainer {
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+}
+
+.quoteButton {
+    padding: 20px 24px;
+    width: 306px;
+    height: 64px;
+    border-radius: 100px;
+    border: 2px solid rgba(252, 211, 77, 1);
+    color: rgba(252, 211, 77, 1);
+    font-weight: 500;
+    box-sizing: border-box;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24px;
+    gap: 2rem;
+}
+
+.quoteButton:hover {
+    background: rgba(252, 211, 77, 1);
+    color: rgba(88, 28, 135, 1);
+    transition: background-color 0.5s ease;
+}
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 3%;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+}
+
+.testimonialCardsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardsWrapper {
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    transition: transform 1s ease-in-out;
+    transform: translateX(-0px); /* Default transform value */
+}
+
+.transitionEffect {
+    transition: transform 1s ease-in-out, height 0.5s ease;
+    /* Adds smooth transition effect for card height */
+}
+
+.cardsButtons {
+    margin: 3% 0;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    gap: 1%;
+    margin-left: 1%;
+
+}
+
+.arrowButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 2px solid rgba(252, 211, 77, 1);
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    gap: 0px;
+    border-radius: 100%;
+    cursor: pointer;
+    color: rgba(252, 211, 77, 1);
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.arrowButton:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 450px) {
+    .sectionTestimonialsContainer {
+        margin-top: 15%;
+        padding: 5% 0 5% 5%;
+    }
+
+    .cardsWrapper {
+        transform: translateX(-calc(var(--current-index) * 368px)); /* Mobile-specific transform value */
+    }
+
+    .textArticle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 0 5% 0 0;
+    }
+
+    .caption {
+        font-size: 1rem;
+    }
+
+    .mainHeadline {
+        font-family: Roboto;
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 35.2px;
+        text-align: center;
+        width: 343px;
+        height: 71px;
+    }
+
+    .paragraph {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;
+        width: 343px;
+        height: 90px;
+    }
+
+    .quoteButtonContainer {
+        position: unset;
+        justify-content: center;
+        margin-top: 5%;
+        padding: 0 5% 0 0;
+    }
+    
+    .sliderContainer {
+        height: auto;
+        margin-top: 5%;
+    }
+
+    .cardsButtons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 1%;
+    }
+
+    .arrowButton {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+}

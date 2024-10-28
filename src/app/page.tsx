@@ -7,6 +7,7 @@ import SectionTestimonials from './components/SectionsTestimonials';
 import Footer from './components/Footer';
 import './styles/homepage.css';
 import Head from 'next/head';
+import Container from './components/Container';
 
 export default function HomePage() {
   return (
@@ -37,6 +38,7 @@ export default function HomePage() {
       <SectionServices />
       <SectionPowerful />
       <SectionTestimonials />
+      {/* <Container/> */}
        {/* <Footer /> */}
     </>
   );
