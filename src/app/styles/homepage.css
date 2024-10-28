@@ -20,7 +20,7 @@
 }
 
 /* Media Query para Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .background-container {
     position: absolute;
     width: 80vw;
@@ -29,6 +29,11 @@
 
   .background-image {
     width: 100%;
+    height: auto;
+  }
+
+  .foreground-image{
+
     height: auto;
   }
 }
