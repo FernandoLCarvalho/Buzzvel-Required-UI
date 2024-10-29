@@ -107,7 +107,7 @@ In the future, it may be deployed to a platform like Vercel to allow for easy ac
 
 ## Video Walkthrough
 
-A video showcasing the project, including its design and functionality, is available at: **not yet**
+A video showcasing the project, including its design and functionality, is not yet available.
 
 ## Acknowledgements
 
