@@ -38,7 +38,7 @@ export default function SectionTestimonials() {
     const nextCard = () => {
     setCurrentIndex((prevIndex) => {
         if (prevIndex + 1 >= cardsLength) {
-            return 0; // Volta para o início após o final do array concatenado
+            return 0; // After all the array is read, it turns back to the beggining
         }
         return prevIndex + 1;
     });

@@ -1,0 +1,214 @@
+.sectionContainer {
+    position: relative;
+    background-color: rgba(126, 34, 206, 1);
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 3%;
+}
+
+.backgroundImgContainer {
+    position: absolute;
+    /* by chosing this I guarantee that this img will not affect the role section height at all */
+    top: 0px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.contentContainer {
+    position: relative;
+    z-index: 2;
+    color: white;
+    margin: 0;
+}
+
+.mainContent {
+    padding: 0 0 0 8%;
+}
+
+.caption {
+    color: rgba(252, 211, 77, 1);
+    width: 894px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+    margin-bottom: 1%;
+
+}
+
+.mainHealine {
+    font-family: Roboto;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 61.6px;
+    text-align: left;
+    width: 894px;
+    height: 124px;
+
+}
+
+.buttonContent {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quoteButton {
+    padding: 20px 24px;
+    width: 306px;
+    height: 64px;
+    border-radius: 100px;
+    border: 2px solid rgba(252, 211, 77, 1);
+    color: rgba(252, 211, 77, 1);
+    font-weight: 500;
+    box-sizing: border-box;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 24px;
+    gap: 2rem;
+}
+
+.quoteButton:hover {
+    background: rgba(252, 211, 77, 1);
+    color: rgba(120, 53, 15, 1);
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.phrase {
+    margin-top: 3%;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    width: 306px;
+    height: 29px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.macbookContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    margin-top: 5%;
+}
+
+.topMacbook {
+    height: auto;
+}
+
+.bottomMacbook {
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    height: auto;
+}
+
+@media (max-width: 1182px) {
+
+
+    .backgroundImgContainer {
+        width: 50%;
+    }
+
+    .caption {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 17.6px;
+        text-align: center;
+        height: auto;
+    }
+
+    .mainHealine {
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35.2px;
+        text-align: center;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .sectionContainer {
+        background-color: rgba(88, 28, 135, 1);
+        position: absolute;
+        padding: 1%;
+    }
+
+    .backgroundImgContainer {
+        bottom: 0;
+        top: auto;
+        left: -50%;
+        bottom: -10%;
+        width: 100%;
+        transform: rotate(178deg);
+        height: auto;
+    }
+
+    .caption {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 17.6px;
+        text-align: center;
+        height: auto;
+    }
+
+    .mainHealine {
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35.2px;
+        text-align: center;
+        height: auto;
+    }
+
+    .mainContent {
+        padding-left: 0;
+        margin-bottom: 8%;
+    }
+
+    .phrase {
+        height: auto;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .buttonContent{
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .macbookContainer {
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+
+    .topMacbook {
+        width: 80%;
+        height: auto;
+    }
+    .bottomMacbook{
+        width: 98%;
+    }
+}

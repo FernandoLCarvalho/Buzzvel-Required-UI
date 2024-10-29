@@ -18,9 +18,9 @@
 
 .backgroundContainer {
     width: 100%;
-    height: auto; /* children will determine the height of this container */
-    position: relative; 
-}
+    /* children will determine the height of this container */
+    position: relative; }
+
 
 .ellipseBackgroundLeft {
     position: absolute;
@@ -87,7 +87,8 @@
 
     .backgroundContainer {
         width: auto;
-
+        overflow: hidden;
+        min-height: 100%;
     }
 
     .ellipseBackgroundLeft {
@@ -95,6 +96,7 @@
         width: auto;
         height: 200px;
         left: -25%;
+    
        
     }
 

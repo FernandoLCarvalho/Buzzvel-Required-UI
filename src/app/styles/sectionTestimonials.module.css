@@ -83,8 +83,9 @@
 
 .quoteButton:hover {
     background: rgba(252, 211, 77, 1);
-    color: rgba(88, 28, 135, 1);
+    color: rgba(120, 53, 15, 1);
     transition: background-color 0.5s ease;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .sliderContainer {
@@ -207,16 +208,17 @@
     }
 
     .cardsButtons {
-        margin-top: 20px;
+        margin: 15% 0;
         display: flex;
         justify-content: center;
         width: 100%;
-        gap: 1%;
+        gap: 5%;
+
     }
 
     .arrowButton {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         font-size: 1.5rem;
     }
 
@@ -245,4 +247,5 @@
     .cardsWrapper{
         gap: 238px;
     }
+
 }
