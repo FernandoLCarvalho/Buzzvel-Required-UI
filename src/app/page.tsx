@@ -40,8 +40,8 @@ export default function HomePage() {
       <SectionServices />
       <SectionPowerful />
       <SectionTestimonials />
-      <Container/>
-       {/* <Footer /> */}
+      <Container />
+      <Footer />
     </>
   );
 }

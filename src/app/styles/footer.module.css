@@ -1,0 +1,92 @@
+.footerContainer {
+    padding: 1.5% 4%;
+}
+
+.companyDiv {
+    padding: 0;
+}
+
+.companyLogo {
+    display: flex;
+    align-items: center;
+    padding: 0
+}
+
+.logo {
+    margin-right: 5%;
+}
+
+.artVenue {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-align: left;
+    color: rgba(15, 23, 42, 1);
+}
+
+.companyInfo {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: rgba(15, 23, 42, 1);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.links {
+    display: flex;
+    justify-content: end;
+    gap: 3%;
+    padding: 0;
+    align-items: center;
+}
+
+.individualLink {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    color: rgba(15, 23, 42, 1);
+}
+
+@media (max-width: 450px) {
+
+    .footerContainer{
+        padding: 5% 4%;
+    }
+    .companyDiv{
+       justify-content: center;
+       display: flex;
+       margin-bottom: 10%;
+    }
+
+    .companyContainer{
+        margin-bottom: 10%;
+    }
+
+    .companyLogo{
+        justify-content: center;
+        margin-bottom: 8%;
+    }
+
+    .logo{
+        margin-right: 2%;
+    }
+
+    .companyInfo{
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .links {
+        justify-content: center;
+        gap: 7%;
+    }
+}
