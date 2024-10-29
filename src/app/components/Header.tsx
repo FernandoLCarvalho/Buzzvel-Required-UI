@@ -1,15 +1,14 @@
 import React from 'react';
 import 'primeflex/primeflex.css';
 import styles from '../styles/header.module.css';
-import Head from 'next/head';
 import { FiArrowRight } from 'react-icons/fi'; 
 
 export default function Header() {
     return (
             <header className={styles.headerContainer}>
-                <div className="grid p-nogutter">
+                <div className="grid">
                     {/* Brand Name */}
-                    <div className={`col-1 ${styles.brandName}`}>
+                    <div className={`col-12 lg:col-1 ${styles.brandName}`}>
                         <h1>soller</h1>
                     </div>
 

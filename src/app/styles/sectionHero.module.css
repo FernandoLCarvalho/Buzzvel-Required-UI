@@ -1,7 +1,8 @@
 .heroSection {
-    padding: 0px 80px;
+    padding: 0px 4%;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2%;
 }
 
 .heroTextContainer {
@@ -11,6 +12,7 @@
     padding: 0;
     align-items: flex-start;
     line-height: 80px;
+    margin-bottom: 5%;
 }
 
 .heroTitle {
@@ -129,7 +131,7 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 1000px) {
+@media (max-width: 1325px) {
     .heroSection {
         flex-direction: column;
         align-items: center;
@@ -152,10 +154,10 @@
         height: auto;
     }
 
-    a .heroTextContainer {
+    .heroTextContainer {
         text-align: center;
         line-height: 50px;
-        justify-content: center;
+        justify-content: start;
     }
 
     .heroImageContainer {
@@ -174,7 +176,7 @@
     }
 
     .quoteButtonContainer {
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
 
@@ -205,10 +207,42 @@
 
 }
 
-@media (max-width: 300px){
+@media (max-width: 750px){
+    .heroTextContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quoteButtonContainer{
+        justify-content: center;
+    }
+
+    .heroQuoteContainer{
+        display: flex;
+        align-items: start;
+       
+    }
+
+    .heroRwanda{
+        justify-self: start !important;
+    }
+} 
+
+
+@media (max-width: 321px){
     .heroRwanda{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .quoteButtonContainer {
+        height: auto;
+        text-wrap:nowrap;
+    }
+
+    .quoteButton {
+       font-size: 16px;
     }
 }
