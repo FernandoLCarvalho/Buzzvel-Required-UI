@@ -19,7 +19,7 @@ export default function Cards({ paragraph, img, pot, name, index, selectedIndex 
             <div className={cardClassName}>
                 <p className={styles.paragraph}>{paragraph}</p>
                 <div className={styles.userInfo}>
-                    <Image src={img} alt="User Thumbnail" width={50} height={50} className={styles.userThumb} />
+                    <Image src={img} alt="User Thumbnail" width={50} height={50} className={styles.userThumb} loading='lazy'/>
                     <div className={styles.userDetails}>
                         <span className={styles.userName}>{name}</span>
                         <span className={styles.userPot}>{pot} KWh</span>

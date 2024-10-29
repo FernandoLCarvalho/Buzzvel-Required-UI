@@ -4,7 +4,7 @@ import styles from '../styles/container.module.css';
 export default function Container() {
     return (
         <section className={styles.sectionContainer}>
-            <img src='Last Ellipse.png' className={styles.backgroundImgContainer} />
+            <img src='Last Ellipse.png' className={styles.backgroundImgContainer} loading='lazy'/>
             <article className={`grid ${styles.contentContainer}`}>
                 <div className={`col-12 lg:col-8 ${styles.mainContent}`}>
                     <h3 className={styles.caption}>Get the Sun to power your home</h3>
@@ -12,7 +12,7 @@ export default function Container() {
                 </div>
                 <div className={`col-12 lg:col-4 ${styles.buttonContent}`}>
                     <button className={styles.quoteButton}>
-                        Request a Quote <FiArrowRight />
+                        Request a Quote <FiArrowRight/>
                     </button>
 
                     <p className={styles.phrase}>Egestas fringilla aliquam leo</p>
@@ -20,8 +20,8 @@ export default function Container() {
             </article>
 
             <div className={styles.macbookContainer}>
-                    <img src='Top Macbook.svg' className={styles.topMacbook}/>
-                    <img src='Bottom Macbook.svg' className={styles.bottomMacbook}/>
+                    <img src='Top Macbook.svg' className={styles.topMacbook} loading='lazy'/>
+                    <img src='Bottom Macbook.svg' className={styles.bottomMacbook} loading='lazy'/>
                 </div>
         </section>
     );

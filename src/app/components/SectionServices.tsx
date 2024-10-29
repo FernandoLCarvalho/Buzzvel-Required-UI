@@ -12,6 +12,7 @@ export default function SectionServices() {
                                 src="Rectangle 15.svg"
                                 alt="Rectangle"
                                 className={'backgroundImg'}
+                                loading='lazy'
                             />
                             <div className={styles.mobileAppWrapper}>
                                 <MobileApp />

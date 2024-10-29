@@ -1,18 +1,11 @@
-# Buzzvel-Required-UI
-Repository for a Figma prototype created by Buzzvel FE that I'll need to reproduce using NextJs
+# Buzzvel-UI-Reproduction
 
+This repository contains the implementation of a Figma prototype provided by Buzzvel, reproduced using Next.js. The project is a part of a technical evaluation and showcases my front-end skills, particularly in responsive design and component architecture.
 
-    So the project consist in 2 main layers.
+<strong>Overview<strong>
 
-    # The first one is a web homepage condensed into 1 single page with many components such as header, 5 sections, a container and then the footer.
-    # The second is a mobile version of the web homepage, which has the exactly same number of components, which are the header, 6 cols refering to the 5 sections and the container and last the footer.  
+The project consists of a web-based homepage designed as a single-page application, broken down into multiple components. The main requirements include two versions of the homepage:
 
-        My approach is to create the Home Page in the page.tsx inside /src/app.
+Web Version: A desktop homepage that includes a header, five sections, a container, and a footer.
 
-        The Home Page is divided into several components that can be found inside /src/app/components. They are all imported inside /src/app/page.tsx; 
-
-        There is a component that involves all the pages that will be rendered in this project, which is /src/app/layout.tsx. It serves, as its names already says, to create and control the layout of everything that will be rendered in this app. 
-
-For this job, I used some third-party libraries, such as Prime Flex and React Icons.
-
-    # It's important to say that many of the CSS used in this project were grabbed from the Figma Prototipe that Buzzvel made.
+Mobile Version: A mobile-responsive version of the same homepage, containing the same components in a different layout to improve user experience on smaller screens.
