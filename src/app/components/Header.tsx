@@ -23,7 +23,7 @@ export default function Header() {
                     </nav>
 
                     {/* Phone Number and Request Quote Button - Hidden on Mobile */}
-                    <div className={`col-4 ${styles.phoneButtonContainer}`} style={{padding: 0}}>
+                    <div className={`col-4 ${styles.phoneButtonContainer}`}>
                         <Image src='/Vector 1.png' alt='Vector' width="24" height="24" />
                         <span className={styles.phoneNumber}>555 818 282</span>
                         <button className={styles.quoteButton}>

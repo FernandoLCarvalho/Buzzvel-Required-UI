@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 150px 0;
-
+    margin: 5% 0 0 0;
 }
 
 .sectionContent {
@@ -21,16 +20,15 @@
     height: auto;
     /* children will determine the height of this container */
     position: relative; 
-    overflow: hidden;
 }
 
 
 .ellipseBackgroundLeft {
     position: absolute;
     width: 710px;
-    height: auto;
-    left: -7%;
-    top: -8%; 
+    height: 73%;
+    left: -8%;
+    top: -9%;
     z-index: -1;
 }
 
@@ -58,6 +56,7 @@
 .sectionCaption {
     color: rgba(217, 119, 6, 1);
     font-size: 20px;
+    margin: 0;
 }
 
 .sectionTitle {
@@ -67,18 +66,18 @@
     line-height: 61.6px;
     text-align: center;
     color: #171717;
+    padding: 0;
+    margin: 1% 0 0 0;
 }
 
 .sectionParagraph {
     width: 900px;
     height: auto;
-    font-family: 'Roboto';
-    font-weight: 400;
     font-size: 20px;
     line-height: 36px;
     text-align: center;
     color: #0F172A;
-    margin-top: 16px;
+    margin-top: 2%;
 }
 
 @media (max-width: 750px) {
@@ -87,11 +86,18 @@
         margin: 0;
         
     }
-
+    .textContent{
+        padding: 0 0 20% 0;
+    }
     .backgroundContainer {
         width: auto;
+        position: relative;
+        height: 240px;
     
-        min-height: 100%;
+    }
+
+    .ellipseWrapper{
+        overflow: hidden;
     }
 
     .ellipseBackgroundLeft {
@@ -99,7 +105,7 @@
         width: auto;
         height: 200px;
         left: -25%;
-    
+        top: -58%;
        
     }
 
@@ -107,16 +113,20 @@
         position: absolute;
         width: 209.74px;
         right: -37%;
-        top: 5%;
+        top: -110%;
     }
 
     .desktopImage {
         position: relative;
         width: 600px;
-        height: 350px;
-        margin-top: 2%;
+        
+        margin-top: -90%;
         left: 50%;
         transform: translateX(-50%);
+        background-image: url('/Desktop Mobile.svg');
+  
+        background-repeat: no-repeat;
+       
     }
 
     .sectionCaption {
