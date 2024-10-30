@@ -1,5 +1,6 @@
 import styles from '../styles/sectionPowerful.module.css';
 import MobileApp2 from './sectionPowerful-components/mobileApp';
+import Image from 'next/image';
 
 export default function SectionPowerful() {
     return (
@@ -36,10 +37,11 @@ export default function SectionPowerful() {
 
                 <div className={`col-12 md:col-12 lg:col-3`} style={{ padding: '0' }}>
                     <div className={styles.gridContainer}>
-                        <img
-                            src="Yellow Ellipse.svg"
+                        <Image
+                            src="/Yellow Ellipse.svg"
                             alt="Yellow Ellipse"
                             className={'backgroundImg'}
+                            width="573" height="1001"
                         />
                         <div className={styles.mobileAppWrapper}>
                             <MobileApp2 />

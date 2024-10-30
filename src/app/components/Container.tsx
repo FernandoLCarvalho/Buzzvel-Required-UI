@@ -1,10 +1,11 @@
 import { FiArrowRight } from 'react-icons/fi';
 import styles from '../styles/container.module.css';
+import Image from 'next/image';
 
 export default function Container() {
     return (
         <section className={styles.sectionContainer}>
-            <img src='Last Ellipse.png' className={styles.backgroundImgContainer} loading='lazy'/>
+            <Image src='/Last Ellipse.svg' alt='Section Ellipse' className={styles.backgroundImgContainer} loading='lazy' width="782" height="780"/>
             <article className={`grid ${styles.contentContainer}`}>
                 <div className={`col-12 lg:col-8 ${styles.mainContent}`}>
                     <h3 className={styles.caption}>Get the Sun to power your home</h3>
@@ -20,8 +21,8 @@ export default function Container() {
             </article>
 
             <div className={styles.macbookContainer}>
-                    <img src='Top Macbook.svg' className={styles.topMacbook} loading='lazy'/>
-                    <img src='Bottom Macbook.svg' className={styles.bottomMacbook} loading='lazy'/>
+                    <Image src='/Top Macbook.svg' alt='Top Macbook' className={styles.topMacbook} loading='lazy' width="816" height="540"/>
+                    <Image src='/Bottom Macbook.svg' alt='Bottom Macbook' className={styles.bottomMacbook} loading='lazy' width="1008" height="18"/>
                 </div>
         </section>
     );

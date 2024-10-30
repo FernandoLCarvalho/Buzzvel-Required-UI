@@ -1,4 +1,6 @@
+
 import styles from "../styles/footer.module.css"
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -15,7 +17,7 @@ export default function Footer() {
                     <div className={`grid`} style={{ margin: 0 }}>
 
                         <div className={`col-12 lg:col-2 ${styles.companyLogo}`}>
-                            <img src="Soller Logo.svg" className={styles.logo} loading="lazy" />
+                            <Image src="/Soller Logo.svg" alt='Soller Logo' className={styles.logo} loading="lazy" width="56" height="33"/>
                             <span className={styles.artVenue}>Soller</span>
                         </div>
 

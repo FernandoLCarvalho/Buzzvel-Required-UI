@@ -19,35 +19,33 @@
 .backgroundContainer {
     width: 100%;
     height: auto;
-    position: relative;
-    display: flex;
-    justify-content: center; /* Centraliza a imagem principal */
-    align-items: center;     /* Alinha ao centro verticalmente */
-}
+    /* children will determine the height of this container */
+    position: relative; }
+
 
 .ellipseBackgroundLeft {
     position: absolute;
-    width: 40%; /* Define a largura como porcentagem do container */
+    width: 710px;
     height: auto;
-    left: -20%; /* Mantém a posição relativa ao container */
-    top: -10%; 
+    left: -7%;
+    top: -8%; 
     z-index: -1;
 }
 
 .ellipseBackgroundRight {
     position: absolute;
-    width: 40%; /* Define a largura como porcentagem do container */
-    height: auto;
-    right: -25%; /* Ajuste da posição para manter relação com a imagem */
-    top: 10%;
+    right: 0%;
+    top: 13%;
     z-index: -1;
 }
 
 .desktopImage {
     position: relative;
-    width: 80%; /* Usa porcentagem para garantir que a imagem se ajuste */
-    max-width: 1520px; /* Define um limite máximo */
-    height: auto;
+    width: 1520px;
+    height: 854px;
+    margin-top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
     background-image: url('/Desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -95,22 +93,28 @@
     }
 
     .ellipseBackgroundLeft {
-        width: 40vw; /* Menor para dispositivos móveis */
-        left: -15vw;
-        top: -10vh; 
+        position: absolute;
+        width: auto;
+        height: 200px;
+        left: -25%;
+    
+       
     }
 
     .ellipseBackgroundRight {
-        width: 40vw; /* Menor para dispositivos móveis */
-        right: -20vw;
-        top: 8vh;
+        position: absolute;
+        width: 209.74px;
+        right: -37%;
+        top: 5%;
     }
 
     .desktopImage {
-        width: 90vw; /* Aumenta para ocupar uma proporção maior da tela no mobile */
-        max-width: 600px; /* Limite de largura máxima */
-        height: auto;
-        background-image: url('/Desktop Mobile.svg');
+        position: relative;
+        width: 600px;
+        height: 350px;
+        margin-top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .sectionCaption {

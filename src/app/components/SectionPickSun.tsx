@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from '../styles/sectionPickSun.module.css';
+import Image from 'next/image';
+
 
 export default function SectionPickSun() {
     return (
@@ -13,8 +15,8 @@ export default function SectionPickSun() {
                     </p>
                 </article>
                 <div className={`${styles.backgroundContainer}`}>
-                    <img src='/Ellipse 14.svg' alt='Ellipse background left' className={styles.ellipseBackgroundLeft} />
-                    <img src='/Ellipse 15.svg' alt='Ellipse background right' className={styles.ellipseBackgroundRight} />
+                    <Image src='/Ellipse 14.svg' alt='Ellipse background left' className={styles.ellipseBackgroundLeft} width="710" height="711"/>
+                    <Image src='/Ellipse 15.svg' alt='Ellipse background right' className={styles.ellipseBackgroundRight} width="558" height="597"/>
                     <div className={`${styles.desktopImage}`} />
                 </div>
 

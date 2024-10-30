@@ -2,6 +2,7 @@ import React from 'react';
 import 'primeflex/primeflex.css';
 import styles from '../styles/header.module.css';
 import { FiArrowRight } from 'react-icons/fi'; 
+import Image from 'next/image';
 
 export default function Header() {
     return (
@@ -24,7 +25,7 @@ export default function Header() {
 
                     {/* Phone Number and Request Quote Button - Hidden on Mobile */}
                     <div className={`col-4 ${styles.phoneButtonContainer}`}>
-                        <img src='Vector 1.png'></img>
+                        <Image src='/Vector 1.png' alt='Vector' width="24" height="24" />
                         <span className={styles.phoneNumber}>555 818 282</span>
                         <button className={styles.quoteButton}>
                             Request a Quote

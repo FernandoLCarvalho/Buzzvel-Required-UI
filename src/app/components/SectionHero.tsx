@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/sectionHero.module.css';
 import 'primeflex/primeflex.css';
 import { FiArrowRight } from 'react-icons/fi';
+import Image from 'next/image';
 
 export default function SectionHero() {
     return (
@@ -20,7 +21,7 @@ export default function SectionHero() {
                     <div className={`col-12 ${styles.heroQuoteContainer}`}>
                         <p className={styles.heroQuote}>“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus.”</p>
                         <div className={styles.heroRwanda}>
-                            <img src='/Rwanda Melflor.svg' alt='Rwanda Melflor' className={styles.heroImage} />
+                            <Image src='/Rwanda Melflor.svg' alt='Rwanda Melflor' className={styles.heroImage} width="64" height="64" />
                             <div className={styles.heroRwandaText}>
                                 <span className={styles.heroRwandaName}>Rwanda Melflor</span>
                                 <a href='https://zerowaste.com' className={styles.heroRwandaLink}>zerowaste.com</a>
