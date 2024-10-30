@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Container() {
     return (
         <section className={styles.sectionContainer}>
-            <Image src='/Last Ellipse.svg' alt='Section Ellipse' className={styles.backgroundImgContainer} loading='lazy' width="782" height="780"/>
+            <Image src='/Last Ellipse.svg' alt='Section Ellipse' className={styles.backgroundImgContainer} loading='lazy' width="782" height="438"/>
             <article className={`grid ${styles.contentContainer}`}>
                 <div className={`col-12 lg:col-8 ${styles.mainContent}`}>
                     <h3 className={styles.caption}>Get the Sun to power your home</h3>

@@ -9,9 +9,9 @@ export default function SectionHero() {
         <main> {/* This section looks like the main content to me */ }
             <section className={styles.heroSection}>
                 <div className="grid" style={{margin: '0'}}>
-                    <div className={`col-12 sm:col-6 ${styles.heroTextContainer}`}>
+                    <div className={`col-12 lg:col-6 ${styles.heroTextContainer}`}>
                         <h1 className={styles.heroTitle}>Get the Sun to Power Your Home</h1>
-                        <p className={styles.heroSubtitle}>Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque.</p>
+                        <span className={styles.heroSubtitle}>Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque.</span>
                         <div className={`${styles.quoteButtonContainer} ${styles.mobileCenter}`}>
                             <button className={styles.quoteButton}>
                                 Request a Quote <FiArrowRight className={styles.arrowIcon} />

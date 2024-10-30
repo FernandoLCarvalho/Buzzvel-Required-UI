@@ -10,39 +10,38 @@
 .card {
     border-radius: 10px;
     background: white;
-    padding: 32px;
     width: 364px;
     height: 442px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 16px;
+
 }
 
 .selected {
     border-radius: 10px;
     background: white;
-    padding: 32px;
-    gap: 16px;
     width: 364px;
     height: 490px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transition: height 0.5s ease, transform 0.5s ease-in-out;
+}
+
+.selected .paragraph{
+    margin-bottom: 15%;
 }
 
 .paragraph {
     font-size: 18px;
     font-weight: 400;
     line-height: 28.8px;
-    color: #333;
+    color: black;
     margin-bottom: 15px;
     width: 300px;
     height: 202px;
-    gap: 0px;
-    opacity: 0px;
     margin-top: 30%;
+    align-self: center;
 }
 
 .userInfo {
@@ -50,6 +49,7 @@
     align-items: center;
     gap: 10px;
     margin-bottom: 10%;
+    padding-left: 8%;
 }
 
 .userThumb {
@@ -79,7 +79,6 @@
 
     .cardContainer {
         height: auto;
-        padding: 10px 0;
     }
 
     .card {
@@ -94,7 +93,7 @@
         border-radius: 20px;
         padding: 10%;
         height: auto;
-        width: 358px;
+        width: 365px;
     }
 
     .paragraph {
@@ -103,10 +102,129 @@
         font-weight: 400;
         line-height: 22.4px;
         text-align: left;
-        width: 294px;
+        width: 294px;.cardContainer {
+            transition: height 0.5s ease;
+            height: 490px;
+            padding: 20px 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card {
+            border-radius: 10px;
+            background: white;
+            padding: 32px;
+            width: 364px;
+            height: 442px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        
+        .selected {
+            border-radius: 10px;
+            background: white;
+            padding: 32px;
+            gap: 16px;
+            width: 364px;
+            height: 490px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: height 0.5s ease, transform 0.5s ease-in-out;
+        }
+        
+        .paragraph {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            color: #333;
+            margin-bottom: 15px;
+            width: 300px;
+            height: 202px;
+            gap: 0px;
+            opacity: 0px;
+            margin-top: 30%;
+        }
+        
+        .userInfo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10%;
+        }
+        
+        .userThumb {
+            border-radius: 50%;
+        }
+        
+        .userDetails {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .userName {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+            color: rgba(15, 23, 42, 1);
+        }
+        
+        .userPot {
+            font-size: 12px;
+            color: rgba(71, 85, 105, 1);
+        }
+        
+        
+        @media (max-width: 450px) {
+        
+            .cardContainer {
+                height: auto;
+                padding: 10px 0;
+            }
+        
+            .card {
+                height: auto;
+                padding: 20px;
+                width: 358px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+        
+            .selected {
+                border-radius: 20px;
+                padding: 10%;
+                height: auto;
+                width: 358px;
+            }
+        
+            .paragraph {
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22.4px;
+                text-align: left;
+                width: 294px;
+                height: 135px;
+                gap: 0px;
+                opacity: 0px;
+            }
+        
+            .userInfo {
+                margin-bottom: 5%;
+            }
+        }
+        
+        @media (max-width: 300px) {
+            .paragraph {
+                height: auto;
+            }
+        
+        }
         height: 135px;
-        gap: 0px;
-        opacity: 0px;
     }
 
     .userInfo {

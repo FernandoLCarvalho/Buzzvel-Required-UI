@@ -1,9 +1,12 @@
+@import '~primeflex/primeflex.css';
+
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'primeflex/primeflex.css';
+
 
 :root {
   --background: #ffffff;
@@ -20,6 +23,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
+  margin: 0;
 }
 
 *{

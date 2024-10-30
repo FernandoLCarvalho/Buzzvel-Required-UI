@@ -1,7 +1,7 @@
 .sectionContainer {
     position: relative;
     background-color: rgba(126, 34, 206, 1);
-    width: 100%;
+
     height: auto;
     overflow: hidden;
     padding: 3%;
@@ -32,8 +32,6 @@
     color: rgba(252, 211, 77, 1);
     width: 894px;
     height: 22px;
-    gap: 0px;
-    opacity: 0px;
     margin-bottom: 1%;
 
 }
@@ -92,8 +90,6 @@
     text-align: center;
     width: 306px;
     height: 29px;
-    gap: 0px;
-    opacity: 0px;
 
 }
 
