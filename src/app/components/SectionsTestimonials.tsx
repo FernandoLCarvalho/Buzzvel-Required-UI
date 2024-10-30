@@ -48,30 +48,31 @@ export default function SectionTestimonials() {
     // Ref to measure the width of a card element for dynamic responsiveness
     const cardRef = useRef<HTMLDivElement>(null);
 
- 
-    // Function to update the card width based on ref and gap
-    const updateCardWidth = () => {
-        if (cardRef.current) {
-            const width = cardRef.current.offsetWidth;
-            const gap = 20;
-            setCardWidth(width + gap);
-        }
-    };
-
-    // Ensure the code runs only on the client side and updates card width on resize
     useEffect(() => {
-        // SSR check
-        if (typeof window === 'undefined') return;
+        // Função para atualizar a largura do card incluindo o gap
+        const updateCardWidth = () => {
+            if (cardRef.current) {
+                const width = cardRef.current.offsetWidth;
+                const gap = 20;
+                setCardWidth(width + gap);
+            }
+        };
 
-        // Initial set of card width
-        updateCardWidth();
+        // First is needed to verify if it's in the client side
+        if (typeof window !== 'undefined') {
+            // Redize Observer is a function that allows to observe the width of the cards keeping it responsive
+            const observer = new ResizeObserver(() => updateCardWidth());
+            if (cardRef.current) observer.observe(cardRef.current);
 
-        // Add a resize event listener to update on window resize
-        window.addEventListener('resize', updateCardWidth);
+            // initial width
+            updateCardWidth();
 
-        // Cleanup listener on component unmount
-        return () => window.removeEventListener('resize', updateCardWidth);
-    }, []);
+            // Clean the observer everytime the component is dismounted
+            return () => {
+                if (cardRef.current) observer.unobserve(cardRef.current);
+            };
+        }
+    }, []); 
 
     // Function to move to the next card in the carousel
     const nextCard = () => {
