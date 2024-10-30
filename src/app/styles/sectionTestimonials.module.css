@@ -26,7 +26,6 @@
 }
 
 .mainHeadline {
-    font-family: Roboto;
     font-size: 56px;
     font-weight: 800;
     line-height: 61.6px;
@@ -34,13 +33,10 @@
     color: white;
     width: 814px;
     height: 62px;
-    gap: 0px;
-    opacity: 0px;
     margin-top: 1%;
 }
 
 .paragraph {
-    font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
@@ -48,8 +44,6 @@
     color: white;
     width: 814px;
     height: 72px;
-    gap: 0px;
-    opacity: 0px;
     margin-top: 3%;
 }
 

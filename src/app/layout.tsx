@@ -1,7 +1,8 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://seu-dominio.com'),
   title: 'Buzzvel Project',
   description: 'Buzzvel 2024 Dev Team Test',
   keywords: 'solar energy, home power, renewable energy, solar panels, soller, sustainable energy',
@@ -10,7 +11,7 @@ export const metadata: Metadata = {
     description: 'Discover Soller’s solutions for sustainable and efficient solar energy to power your home.',
     images: '/Mask masked.svg',
     type: 'website',
-    // url: '',
+    url: 'https://seu-dominio.com',
   },
   twitter: {
     card: 'summary_large_image',
@@ -18,8 +19,12 @@ export const metadata: Metadata = {
     description: 'Discover Soller’s solutions for sustainable and efficient solar energy.',
     images: '/Mask masked.svg',
   },
-  viewport: 'width=device-width, initial-scale=1.0',
   authors: [{ name: 'Soller Team' }],
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({

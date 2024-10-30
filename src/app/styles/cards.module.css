@@ -36,12 +36,10 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 28.8px;
-    color: #333;
+    color: black;
     margin-bottom: 15px;
     width: 300px;
     height: 202px;
-    gap: 0px;
-    opacity: 0px;
     margin-top: 30%;
 }
 
@@ -105,8 +103,6 @@
         text-align: left;
         width: 294px;
         height: 135px;
-        gap: 0px;
-        opacity: 0px;
     }
 
     .userInfo {

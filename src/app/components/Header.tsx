@@ -1,5 +1,4 @@
 import React from 'react';
-import 'primeflex/primeflex.css';
 import styles from '../styles/header.module.css';
 import { FiArrowRight } from 'react-icons/fi'; 
 import Image from 'next/image';
