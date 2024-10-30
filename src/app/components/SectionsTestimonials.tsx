@@ -3,9 +3,10 @@
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi';
 import styles from '../styles/sectionTestimonials.module.css';
 import Cards from './sectionTestimonials-components/cards';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function SectionTestimonials() {
+    // Data for each card, including text, image, and other details.
     const cardsData = [
         {
             paragraph: 'Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra, euismod. Tempus, nunc, molestie imperdiet curabitur commodo euismod.',
@@ -31,48 +32,71 @@ export default function SectionTestimonials() {
             pot: 12,
             name: 'Cameron Williamson',
         },
+        // Duplicate of the last card to create the effect of continuity in the carousel
+        {
+            paragraph: 'Hendrerit augue ut nec, senectus quis integer netus. Sagittis fusce rhoncus magnis habitant amet amet. Egestas amet habitasse amet risus tellus ornare. Hendrerit augue ut nec, senectus. Mauris egestas feugiat leo vitae praesent neque, et.',
+            img: '/User Thumb 4.svg',
+            pot: 12,
+            name: 'Cameron Williamson',
+        },
     ];
 
-    const [currentIndex, setCurrentIndex] = useState<number>(0);
-    const cardsLength = cardsData.length * 2; 
-    const nextCard = () => {
-    setCurrentIndex((prevIndex) => {
-        if (prevIndex + 1 >= cardsLength) {
-            return 0; // After all the array is read, it turns back to the beggining
-        }
-        return prevIndex + 1;
-    });
-};
+    // State to track the current index of the displayed card
+    const [currentIndex, setCurrentIndex] = useState(0);
+    // State to store the width of each card (including any gap)
+    const [cardWidth, setCardWidth] = useState(0);
+    // Ref to measure the width of a card element for dynamic responsiveness
+    const cardRef = useRef<HTMLDivElement>(null);
 
-const prevCard = () => {
-    setCurrentIndex((prevIndex) => {
-        if (prevIndex - 1 < 0) {
-            return cardsLength - 1;
+ 
+    // Function to update the card width based on ref and gap
+    const updateCardWidth = () => {
+        if (cardRef.current) {
+            const width = cardRef.current.offsetWidth;
+            const gap = 20;
+            setCardWidth(width + gap);
         }
-        return prevIndex - 1;
-    });
-};
+    };
 
+    // Ensure the code runs only on the client side and updates card width on resize
     useEffect(() => {
-        if (currentIndex >= cardsLength) {
-            setCurrentIndex(0);
-        } else if (currentIndex < 0) {
-            setCurrentIndex(cardsLength - 1);
-        }
-    }, [currentIndex, cardsLength]);
+        // SSR check
+        if (typeof window === 'undefined') return;
+
+        // Initial set of card width
+        updateCardWidth();
+
+        // Add a resize event listener to update on window resize
+        window.addEventListener('resize', updateCardWidth);
+
+        // Cleanup listener on component unmount
+        return () => window.removeEventListener('resize', updateCardWidth);
+    }, []);
+
+    // Function to move to the next card in the carousel
+    const nextCard = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % cardsData.length); // Loop back to start after last card
+    };
+
+    // Function to move to the previous card in the carousel
+    const prevCard = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? cardsData.length - 1 : prevIndex - 1 // Loop back to end if at first card
+        );
+    };
 
     return (
         <section className={styles.sectionTestimonialsContainer}>
-            <div className={`grid ${styles.topSection}`} style={{margin: 0}}>
+            <div className={`grid ${styles.topSection}`} style={{ margin: 0 }}>
+                {/* Header and description text section */}
                 <article
                     data-type="Join other Sun harvesters"
                     className={`col-12 lg:col-6 ${styles.textArticle}`}
-        
                 >
                     <h3 className={styles.caption}>Join other Sun harvesters</h3>
                     <h1 className={styles.mainHeadline}>Make something awesome</h1>
                     <p className={styles.paragraph}>
-                    Dui euismod iaculis libero, aliquet vitae et elementum porttitor. Eleifend mi tristique condimentum congue fusce nunc, donec magnis commodo.
+                        Dui euismod iaculis libero, aliquet vitae et elementum porttitor. Eleifend mi tristique condimentum congue fusce nunc, donec magnis commodo.
                     </p>
                 </article>
                 <div className={`col-12 lg:col-6 ${styles.quoteButtonContainer}`}>
@@ -81,25 +105,31 @@ const prevCard = () => {
                     </button>
                 </div>
 
-                <div className={`col-12 ${styles.sliderContainer}`} style={{padding: 0}}>
+                {/* Carousel container */}
+                <div className={`col-12 ${styles.sliderContainer}`} style={{ padding: 0 }}>
                     <section className={styles.testimonialCardsSection}>
                         <div
-                            className={`${styles.cardsWrapper} ${styles.transitionEffect}`}
-                            style={{ transform: `translateX(-${currentIndex * 384}px)` }}
+                            className={`${styles.cardsWrapper}`}
+                            style={{
+                                transform: `translateX(-${currentIndex * cardWidth}px)`, // Move cards based on current index
+                                transition: 'transform 0.5s ease-in-out', // Smooth transition for movement
+                            }}
                         >
-                            {cardsData.concat(cardsData).map((card, index) => (
-                                <Cards
-                                    key={index}
-                                    paragraph={card.paragraph}
-                                    img={card.img}
-                                    pot={card.pot}
-                                    name={card.name}
-                                    index={index}
-                                    selectedIndex={currentIndex}
-                                />
+                            {cardsData.map((card, index) => (
+                                <div key={index} ref={index === 0 ? cardRef : null} className={styles.cardContainer}>
+                                    <Cards
+                                        paragraph={card.paragraph}
+                                        img={card.img}
+                                        pot={card.pot}
+                                        name={card.name}
+                                        index={index}
+                                        selectedIndex={currentIndex}
+                                    />
+                                </div>
                             ))}
                         </div>
 
+                        {/* Navigation buttons for carousel */}
                         <div className={styles.cardsButtons}>
                             <button className={styles.arrowButton} onClick={prevCard}>
                                 <FiArrowLeft />
