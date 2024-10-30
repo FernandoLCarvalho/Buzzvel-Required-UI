@@ -20,7 +20,9 @@
     width: 100%;
     height: auto;
     /* children will determine the height of this container */
-    position: relative; }
+    position: relative; 
+    overflow: hidden;
+}
 
 
 .ellipseBackgroundLeft {

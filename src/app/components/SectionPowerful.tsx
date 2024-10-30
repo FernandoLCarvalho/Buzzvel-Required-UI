@@ -6,7 +6,7 @@ export default function SectionPowerful() {
     return (
         <section className={styles.sectionPowerful}>
             <div className={`grid ${styles.sectionPowerfulContainer}`} >
-                <div className={`col-12 md:col-12 lg:col-9 ${styles.servicesArticle}`} style={{ display: 'flex', padding: '5%' }}>
+                <div className={`col-12 md:col-12 lg:col-8 ${styles.servicesArticle}`} style={{ display: 'flex', padding: '0% 5%' }}>
                     <article data-type="personalized-services">
                         <div className={`grid ${styles.servicesSections}`} style={{ padding: '0', margin: 0 }}>
                             <h3 className={`col-12 ${styles.servicesCaption}`} style={{ margin: 0, padding: 0 }}>System features</h3>
@@ -35,13 +35,13 @@ export default function SectionPowerful() {
                     </article>
                 </div>
 
-                <div className={`col-12 md:col-12 lg:col-3`} style={{ padding: '0' }}>
+                <div className={`col-12 md:col-12 lg:col-4`} style={{ padding: '0' }}>
                     <div className={styles.gridContainer}>
                         <Image
                             src="/Yellow Ellipse.svg"
                             alt="Yellow Ellipse"
-                            className={'backgroundImg'}
-                            width="573" height="1001"
+                            className={styles.backgroundImg}
+                            width="1146" height="1000"
                         />
                         <div className={styles.mobileAppWrapper}>
                             <MobileApp2 />

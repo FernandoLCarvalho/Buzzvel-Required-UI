@@ -1,5 +1,6 @@
-import type { Metadata, Viewport } from 'next';
+import type { Metadata } from 'next';
 import './globals.css';
+import { Viewport } from 'next/dist/lib/metadata/types/extra-types';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://seu-dominio.com'),

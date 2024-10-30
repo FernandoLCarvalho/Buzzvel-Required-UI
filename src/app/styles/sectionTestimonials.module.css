@@ -26,6 +26,7 @@
 }
 
 .mainHeadline {
+    font-family: Roboto;
     font-size: 56px;
     font-weight: 800;
     line-height: 61.6px;
@@ -37,6 +38,7 @@
 }
 
 .paragraph {
+    font-family: Roboto;
     font-size: 20px;
     font-weight: 400;
     line-height: 36px;
@@ -44,6 +46,8 @@
     color: white;
     width: 814px;
     height: 72px;
+    gap: 0px;
+    opacity: 0px;
     margin-top: 3%;
 }
 
@@ -89,7 +93,6 @@
     justify-content: start;
     margin-top: 3%;
     padding: 0;
-    overflow: hidden;
     position: relative;
     height: auto;
 }
@@ -98,6 +101,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .cardsWrapper {
@@ -152,9 +156,6 @@
         padding: 5% 0 5% 5%;
     }
 
-    .cardsWrapper {
-        transform: translateX(-calc(var(--current-index) * 368px)); /* Mobile-specific transform value */
-    }
 
     .textArticle {
         display: flex;
@@ -217,9 +218,11 @@
     }
 
     .cardsWrapper{
-        gap:28px; /* needed a bigger gap on this class to fill the space when user slides the cards
-        and keep the card space like in the prototype
-        */
+        gap:17.4px;
+    }
+
+    .cardsWrapper {
+        transform: translateX(-calc(var(--current-index) * 384px)); /* Mobile-specific transform value */
     }
 }
 

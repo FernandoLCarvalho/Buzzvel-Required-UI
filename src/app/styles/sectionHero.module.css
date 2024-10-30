@@ -2,7 +2,7 @@
     padding: 0px 4%;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2%;
+   
 }
 
 .heroTextContainer {
@@ -225,7 +225,7 @@
     }
 
     .heroRwanda{
-        justify-self: start !important;
+        justify-self: flex-start !important;
     }
 } 
 

@@ -1,32 +1,20 @@
-.sectionPowerfulContainer{
-    margin: 0;
+.sectionPowerfulContainer {
+    max-width: 100vw;
+    height: auto;
+    margin: 0 0 5% 0;
 }
 
 .gridContainer {
     display: grid;
-    width: 100%;
-    height: 100%;
     position: relative;
-}
-
-.backgroundImg {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: 0;
-    object-fit: cover;
-    bottom: 0;
-    right: 0;
 }
 
 .mobileAppWrapper {
-    position: relative;
+    position: absolute;
     z-index: 1;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 15%;
+    right: 18%;
+    width: 65%;
 }
 
 .gridContainer>*:not(.backgroundImg) {
@@ -104,13 +92,9 @@
         flex-direction: column-reverse;
     }
 
-    .backgroundImg {
-        width: 80%;
-        height: auto;
-    }
-
     .mobileAppWrapper {
-        margin-top: 20px;
+
+        width: 75%;
     }
 
     .servicesArticle {
@@ -118,29 +102,33 @@
         margin-bottom: 20px;
     }
 
-    .servicesCaption{
+    .servicesCaption {
         text-align: start;
     }
-  
+
     .servicesSectionsRow p {
         height: auto;
     }
 
-    .servicesSecondaryHeadline{
+    .servicesSecondaryHeadline {
         height: auto;
         text-align: start;
     }
 
-    .gridContainer{
-        min-width: 80%;
-        width: 80%;
+    /* .gridContainer{
+       
         position: relative;
-        left: 20%;
-    }
+   
+    } */
 
 }
 
 @media (max-width: 500px) {
+
+
+    .sectionPowerfulContainer {
+        margin: 0;
+    }
 
     .servicesArticle {
         align-items: normal;
@@ -151,7 +139,7 @@
         font-size: 1rem;
     }
 
-    .servicesSections{
+    .servicesSections {
         margin-bottom: 10%;
     }
 
@@ -179,7 +167,7 @@
         font-family: 'Roboto';
     }
 
-    .servicesSectionsRow h3{
+    .servicesSectionsRow h3 {
         font-family: Roboto;
         font-size: 20px;
         font-weight: 500;
@@ -188,27 +176,36 @@
         margin-top: 30%;
     }
 
-    .servicesSectionsRow p{
+    .servicesSectionsRow p {
         font-family: Roboto;
         font-size: 16px;
         font-weight: 400;
         line-height: 22.4px;
         text-align: center;
-    } 
+    }
 
-    .gridContainer{
-        min-width: 80%;
-        position: relative;
+    .gridContainer {
+        max-width: 80%;
         left: 20%;
     }
+
+    .backgroundImg{
+        height: 100%;
+    }
+
+    .mobileAppWrapper {
+        right: 12%;
+        top: 12%;
+    }
+
 }
 
 @media (max-width: 300px) {
-    .servicesMainHeadline{
+    .servicesMainHeadline {
         font-size: 1rem;
     }
 
-    .sectionPowerful{
+    .sectionPowerful {
         margin-top: 100%;
     }
 

@@ -1,30 +1,15 @@
 .mobileAppContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 100vw;
-}
-
-.mobileAppBorderArround {
-    padding: 1%;
-    background-color: white;
     border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 1%;
+    box-shadow: 0px 20px 25px -5px rgb(0, 0, 0, 0.5);
 }
 
 .mobileAppContent {
-    width: 300px;
-    height: 570px;
+    height: 750px;
     background: rgba(224, 242, 254, 1);
     border-radius: 20px 20px 0 0;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 7% 0 7%;
+    padding: 10% 7% 0 7%;
     margin: 0;
     z-index: 0;
 }
@@ -40,43 +25,50 @@
 }
 
 .title {
-    width: 50%;
-    height: 15px;
+    width: 70%;
+    height: 16px;
     background-color: rgba(186, 230, 253, 1);
     align-self: center;
-    border-radius: 5px;
-    margin-left: 15%;
+    border-radius: 10px;
+    margin-left: 10%;
 }
 
 .featureCardsContainer {
-    margin-top: 10%;
     width: 100%;
-    position: relative;
-    height: 150px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .featureCard {
-    position: absolute;
-    width: 110px;
-    height: 150px;
+    position: relative;
+    width: 33%;
+    height: 196.8px;
     background: #FFFFFF;
     border: 2px solid #38BDF8;
     box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
     overflow: hidden;
+
+
 }
 
 .featureCard:nth-child(1) {
-    left: 0;
+    position: absolute;
+    left: 8%;
+    top: 33%;
 }
 
 .featureCard:nth-child(2) {
-    left: 130px;
+    position: absolute;
+    left: 48%;
+    top: 33%;
 }
 
 .featureCard:nth-child(3) {
-    left: 240px;
+    position: absolute;
+    left: 83%;
+    top: 33%;
 }
 
 .ellipse {
@@ -146,25 +138,24 @@
     transform: translateX(15%);
 }
 
-
 .bar {
     width: 187.2px;
     height: 14.4px;
     background-color: white;
     align-self: center;
     border-radius: 5px;
-    margin-top: 25%;
+    position: absolute;
+    top: 60%;
 }
 
 .lastFeatureContainer {
     position: relative;
     width: 100%;
-    height: 30%;
     overflow: hidden;
     background-color: white;
-    margin-top: 10%;
     border-radius: 20px 20px 0 0;
-    bottom: 0;
+    top: 12.3%;
+    height: 23.5%;
 }
 
 .largeCircleInLastFeature {
@@ -173,19 +164,19 @@
     right: 47.9%;
     top: -22.45%;
     bottom: 39.29%;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     background: white;
-    border: 9px solid rgba(224, 242, 254, 1);
+    border: 10px solid rgba(224, 242, 254, 1);
     border-radius: 50%;
 }
 
 .smallCircleInLastFeature {
     position: absolute;
-    width: 35px;
-    height: 35px;
-    top: 50px;
-    left: 160px;
+    width: 40px;
+    height: 40px;
+    top: 30%;
+    left: 65%;
     background: rgba(251, 191, 36, 1);
     border-radius: 50%;
 }
@@ -194,21 +185,19 @@
     position: absolute;
     right: 0%;
     bottom: 0%;
-    border-left: 100px solid transparent;
-    border-top: 100px solid rgba(186, 230, 253, 1);
+    border-left: 130px solid transparent;
+    border-top: 130px solid rgba(186, 230, 253, 1);
     transform: rotate(90deg);
 }
 
 .bottomMenu {
-    width: 300px;
-    /* Needs to be the same width of the mobileAppContent */
-    height: 115px;
     background: rgba(224, 242, 254, 1);
     border-top: 3px solid rgba(255, 255, 255, 1);
     border-radius: 0 0 20px 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 5% 0;
 }
 
 .bottomMenuIcon {
@@ -217,90 +206,51 @@
 
 @media (max-width: 768px) {
 
-    .mobileAppBorderArround {
-        padding: 2%;
-    }
 
     .mobileAppContent {
-        width: 300px;
         height: 600px;
+
+        padding: 0 2%;
     }
 
     .featureCard {
-        width: 100px;
-        height: 130px;
+        width: 33%;
+        height: 150px;
+
     }
 
-    .featureCard:nth-child(2) {
-        left: 115px;
-    }
 
-    .featureCard:nth-child(3) {
-        left: 230px;
-    }
-
-    .bottomMenu {
-        width: 300px;
-    }
-}
-
-@media (max-width: 550px) {
-    .mobileAppContent {
-        width: 300px;
-        height: 540px;
-    }
-
-    .lastFeatureContainer {
-        height: 26.55%;
-    }
-
-    .largeCircleInLastFeature {
-        height: 130px;
-        width: 130px;
-        border: 7px solid rgba(224, 242, 254, 1);
-    }
-
-    .smallCircleInLastFeature {
-        width: 30px;
-        height: 30px;
-        top: 25%;
-        left: 60%;
-    }
-
-    .triangle {
-        width: 25px;
-        height: 25px;
-        border-left: 100px solid transparent;
-        border-top: 100px solid rgba(186, 230, 253, 1);
-    }
 }
 
 @media (max-width: 500px) {
-
-    .mobileAppBorderArround {
-        padding: 2%;
-    }
-
     .mobileAppContent {
-        width: 220px;
-        height: 450px;
+
+        height: 400px;
     }
 
     .mobileAppWrapper {
         left: 5%;
     }
 
+    .description {
+        left: 10%;
+        position: relative;
+    }
+
+
     .featureCard {
-        width: 75px;
+        width: 33%;
         height: 100px;
+        margin-left: 10%;
     }
 
-    .featureCard:nth-child(2) {
-        left: 95px;
-    }
-
-    .featureCard:nth-child(3) {
-        left: 180px;
+    .star {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        z-index: 1;
+        width: 60%;
+        z-index: 1;
     }
 
     .ellipseForStar {
@@ -314,7 +264,7 @@
     }
 
     .lastFeatureContainer {
-        height: 24.3%;
+        top: 9.5%
     }
 
     .largeCircleInLastFeature {
@@ -331,59 +281,79 @@
     }
 
     .triangle {
-        width: 25px;
-        height: 25px;
-        border-left: 70px solid transparent;
-        border-top: 70px solid rgba(186, 230, 253, 1);
+        border-left: 80px solid transparent;
+        border-top: 80px solid rgba(186, 230, 253, 1);
+    }
+
+    .featureCardsContainer {
+        margin-top: 0;
     }
 
     .bar {
         margin-top: 0;
+        height: 7.54px;
+        width: 50%;
+        left: 10%;
     }
 
-    .bottomMenu {
-        width: 220px;
-        height: 60.34px;
+    .lastFeatureContainer{
+        top: 10.3%;
+        height: 20%;
+        width: 90%;
+        left: 5%;
+    }
+
+    .bottomMenuIcon {
+        height: 30px;
     }
 }
 
 @media (max-width: 400px) {
-    .mobileAppContent {
-        width: 220px;
-        height: 400px;
+    .mobileAppContent{
+        height: 390px;
     }
 
-    .lastFeatureContainer {
-        height: 14.6%;
+    .smallCircle {
+        left: 50%;
+        bottom: 55%;
+        width: 30px;
+        height: 30px;
     }
 
     .largeCircleInLastFeature {
-        height: 60px;
-        width: 60px;
+        height: 65px;
+        width: 65px;
         border: 5px solid rgba(224, 242, 254, 1);
     }
 
     .smallCircleInLastFeature {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         top: 25%;
-        left: 40%;
+        left: 50%;
     }
 
     .triangle {
-        border-left: 50px solid transparent;
-        border-top: 50px solid rgba(186, 230, 253, 1);
+        border-left: 65px solid transparent;
+        border-top: 65px solid rgba(186, 230, 253, 1);
     }
 
-    .featureCard:nth-child(1) {
-        left: 0;
+    .featureCard {
+        width: 33%;
+        height: 100px;
+        margin-left: 3%;
     }
-    
-    .featureCard:nth-child(2) {
-        left: 90px;
+}
+
+@media (max-width: 170px) {
+
+    .mobileAppContent{
+        height: 170px;
+        border-radius: 20px;
     }
-    
-    .featureCard:nth-child(3) {
-        left: 170px;
+
+    .featureCardsContainer{
+        display: none;
     }
+    .bottomMenu{display: none;}
 }

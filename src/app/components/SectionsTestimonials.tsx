@@ -63,10 +63,11 @@ const prevCard = () => {
 
     return (
         <section className={styles.sectionTestimonialsContainer}>
-            <div className={`grid ${styles.topSection}`}>
+            <div className={`grid ${styles.topSection}`} style={{margin: 0}}>
                 <article
                     data-type="Join other Sun harvesters"
                     className={`col-12 lg:col-6 ${styles.textArticle}`}
+        
                 >
                     <h3 className={styles.caption}>Join other Sun harvesters</h3>
                     <h1 className={styles.mainHeadline}>Make something awesome</h1>
@@ -80,7 +81,7 @@ const prevCard = () => {
                     </button>
                 </div>
 
-                <div className={`col-12 ${styles.sliderContainer}`}>
+                <div className={`col-12 ${styles.sliderContainer}`} style={{padding: 0}}>
                     <section className={styles.testimonialCardsSection}>
                         <div
                             className={`${styles.cardsWrapper} ${styles.transitionEffect}`}
