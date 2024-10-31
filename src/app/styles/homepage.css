@@ -3,13 +3,17 @@
   top: 0;
   right: 0;
   z-index: -1;
+  width: 100vw;
+  height: auto;
 }
 
 .background-image {
-  position: relative;
+  position: absolute;
   right: 0;
   top: 0;
   z-index: -1;
+  max-width: 100%;
+  height: auto;
 }
 
 .foreground-image {
@@ -17,36 +21,41 @@
   right: 0;
   top: 0px;
   z-index: 0;
+  max-width: 100%;
+  height: auto;
 }
 
-/* Media Query para Mobile */
+/* Ajustes para tablets e telas menores */
 @media (max-width: 1000px) {
   .background-container {
-    position: absolute;
     width: 80vw;
     height: auto;
   }
 
   .background-image {
-    width: 100%;
+    width: 70%;
     height: auto;
   }
 
-  .foreground-image{
-
+  .foreground-image {
+    width: 70%;
     height: auto;
+    top: 20px;
   }
 }
 
-@media (max-width: 400px) {
+/* Ajustes para telas de celular (em modo retrato) */
+@media (max-width: 500px) {
   .background-container {
-    position: absolute;
-    width: 80vw;
-    height: 300px;
+    width: 100vw;
+    height: auto;
   }
 
-  .background-image {
-    width: 100%;
+  .background-image,
+  .foreground-image {
+    width: 90%;
     height: auto;
+    margin: 0 auto;
+    top: 10px;
   }
 }

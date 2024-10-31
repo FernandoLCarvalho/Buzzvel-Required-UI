@@ -19,7 +19,7 @@ export default function HomePage() {
     <>
       <div className="background-container">
         <Image src="/Elipse 1.svg" alt="Ellipse Background" className="background-image" width="673" height="694"/>
-        <Image src="/Mask masked.svg" alt="Man working on solar panels" className="foreground-image" width="673" height="693"/>
+        <Image src="/Mask masked.svg" alt="Man working on solar panels" className="foreground-image" width="673" height="694"/>
       </div>
       <Header />
       <SectionHero />
