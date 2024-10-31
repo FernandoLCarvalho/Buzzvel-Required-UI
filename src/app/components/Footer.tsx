@@ -11,7 +11,7 @@ export default function Footer() {
             {/* Always when it's using grid, the Prime Flex grid itself has a margin applied.
                 That's the reason I normally cutoff the margin when I use this class. */}
 
-                <div className={`col-12 mg:col-12 lg:col-6 ${styles.companyDiv}`}>
+                <div className={`col-12 lg:col-6 ${styles.companyDiv}`}>
 
                     <div className={`grid`} style={{ margin: 0 }}>
 
