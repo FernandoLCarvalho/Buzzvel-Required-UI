@@ -109,6 +109,13 @@
         width: 80%;
     }
 
+    .articleInside{
+        padding:1% 5%;
+    }
+
+    .servicesCaption{
+        margin: 0% 0 1% 0;
+    }
     .gridContainer {
         position: relative;
     }
@@ -150,6 +157,14 @@
         width: 220px;
     }
 
+    .articleInside{
+        padding:10% 3%;
+    }
+
+    .servicesCaption{
+        margin: 25% 0 1% 0;
+    }
+
     .servicesArticle {
         align-items: normal;
     }
@@ -173,8 +188,14 @@
     .servicesSecondaryHeadline {
         align-items: center;
         justify-content: center;
-        text-align: center;
-        height: auto;
+        width: 343px;
+        height: 68px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;        
+        
     }
 
     .servicesSecondaryHeadline {

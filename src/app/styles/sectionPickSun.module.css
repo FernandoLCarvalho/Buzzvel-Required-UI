@@ -13,13 +13,14 @@
     width: 100%;
     text-align: center;
     position: relative;
+    height: auto;
 }
 
 .backgroundContainer {
     width: 100%;
     height: auto;
     /* children will determine the height of this container */
-    position: relative; 
+    position: relative;
 }
 
 
@@ -34,9 +35,16 @@
 
 .ellipseBackgroundRight {
     position: absolute;
-    right: 0%;
+    width: 558px;
+    height: 597px;
     top: 13%;
+    right: 0;
     z-index: -1;
+    background-image: url('/Ellipse 15.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .desktopImage {
@@ -82,51 +90,45 @@
 
 @media (max-width: 750px) {
     .pickSunSection {
-        padding: 20% 0 0 0;
+        padding: 0 0 0 0;
         margin: 0;
-        
     }
-    .textContent{
-        padding: 0 0 20% 0;
+
+    .sectionContent {
+        height: 680px;
     }
+
     .backgroundContainer {
         width: auto;
-        position: relative;
-        height: 240px;
-    
-    }
-
-    .ellipseWrapper{
-        overflow: hidden;
-    }
-
-    .ellipseBackgroundLeft {
-        position: absolute;
-        width: auto;
-        height: 200px;
-        left: -25%;
-        top: -58%;
-       
-    }
-
-    .ellipseBackgroundRight {
-        position: absolute;
-        width: 209.74px;
-        right: -37%;
-        top: -110%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:unset;
     }
 
     .desktopImage {
-        position: relative;
-        width: 600px;
-        
-        margin-top: -90%;
-        left: 50%;
-        transform: translateX(-50%);
+        height: 400px;
+        width: 800px;
+        position: unset;
+        transform: translateX(0%);
         background-image: url('/Desktop Mobile.svg');
-  
         background-repeat: no-repeat;
-       
+    }
+
+    .ellipseBackgroundLeft {
+        transform: translateX(-20%);
+        top: 25%;
+        height: 50%;
+    }
+
+    .ellipseBackgroundRight {
+    
+        width: 300px;
+        height: 230px;
+        top: 44%;
+
+        background-image: url('/Ellipse 15.svg');
+        background-size: contain;
     }
 
     .sectionCaption {
@@ -144,5 +146,55 @@
         width: 320px;
         height: auto;
         text-align: center;
+    }
+
+
+
+    @media (max-width: 500px) {
+        .pickSunSection {
+            padding: 20% 0 0 0;
+            margin: 0;
+        }
+
+        .sectionContent {
+            height: auto;
+            max-width: 100% !important;
+        }
+
+        .backgroundContainer {
+            width: auto;
+            position: relative;
+            height: 240px;
+
+        }
+
+
+        .ellipseBackgroundLeft {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -30%;
+            top: -22%;
+            z-index: -1;
+        }
+
+        .ellipseBackgroundRight {
+            position: absolute;
+            width: 10%;
+            height: 210.1px;
+            top: 10%;
+            justify-self: flex-end;
+            transform: translateX(0%);
+            background-image: url('/Cutted Ellipse 15.svg');
+            background-repeat: no-repeat;
+        }
+
+        .desktopImage {
+            margin-top: 0%;
+            width: 600px;
+            background-image: url('/Desktop Mobile.svg');
+            background-repeat: no-repeat;
+        }
+
     }
 }

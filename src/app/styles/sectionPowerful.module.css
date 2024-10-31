@@ -93,8 +93,7 @@
     }
 
     .mobileAppWrapper {
-
-        width: 75%;
+        width: 60%;
     }
 
     .servicesArticle {
@@ -115,11 +114,6 @@
         text-align: start;
     }
 
-    /* .gridContainer{
-       
-        position: relative;
-   
-    } */
 
 }
 
@@ -191,6 +185,10 @@
 
     .backgroundImg{
         height: 100%;
+    }
+
+    .mobileAppWrapper {
+        width: 75%;
     }
 
     .mobileAppWrapper {

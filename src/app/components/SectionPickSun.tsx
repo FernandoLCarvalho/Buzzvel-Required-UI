@@ -13,12 +13,12 @@ export default function SectionPickSun() {
                         Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.
                     </p>
                 </article>
-                <div className={`${styles.backgroundContainer}`}>
-                    <div className={`${styles.ellipseWrapper}`}>
-                        <Image src='/Ellipse 14.svg' alt='Ellipse background left' className={styles.ellipseBackgroundLeft} width="710" height="711"/>
-                        <Image src='/Ellipse 15.svg' alt='Ellipse background right' className={styles.ellipseBackgroundRight} width="558" height="597"/>
+                <div className={`grid ${styles.backgroundContainer}`}>
+                    <div className={`lg:col-12 ${styles.desktopImage}`} />
+                    <div className={styles.teste}>
+                        <Image src='/Ellipse 14.svg' alt='Ellipse background left' className={styles.ellipseBackgroundLeft} width="710" height="711" />
+                        <div className={styles.ellipseBackgroundRight} />
                     </div>
-                    <div className={`${styles.desktopImage}`} />
                 </div>
             </div>
         </section>

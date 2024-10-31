@@ -17,14 +17,14 @@
 
 .firstImage {
     margin-bottom: 0%;
-        display: flex;
-        left: 10%;
-        width: 80%;
-        position: absolute;
-        top: 5%;
+    display: flex;
+    left: 10%;
+    width: 80%;
+    position: absolute;
+    top: 5%;
 }
 
-.firstImageContent{
+.firstImageContent {
     height: auto;
 }
 
@@ -35,9 +35,9 @@
     top: 36%
 }
 
-.secondImageContent{
+.secondImageContent {
     width: 80%;
-   
+
     height: auto;
 }
 
@@ -45,12 +45,13 @@
     left: 10%;
     position: absolute;
     top: 60%;
-    
+
 }
-.thirdImageContent{
-        height: auto;
-        width: 60%;
-    }
+
+.thirdImageContent {
+    height: auto;
+    width: 60%;
+}
 
 
 .featureCardsContainer {
@@ -88,9 +89,6 @@
     border: 4px solid white;
 }
 
-
-
-
 .bottomMenu {
     background: rgba(224, 242, 254, 1);
     border-top: 3px solid rgba(255, 255, 255, 1);
@@ -113,7 +111,7 @@
 
     .mobileAppContent {
         padding: 0% 7% 0 7%;
-        height: 390px;
+        height: 750px;
     }
 
     .firstImage {
@@ -125,6 +123,10 @@
         top: 5%;
     }
 
+    .firstImageContent{
+        width: 100%;
+    }
+
     .secondImage {
         left: 10%;
         position: absolute;
@@ -134,7 +136,7 @@
     .thirdImage {
         left: 10%;
         position: absolute;
-        top: 60%;
+        top: 55%;
     }
 
     .featureCardsContainer {
@@ -154,32 +156,102 @@
 
     .firstCircle {
         left: 0;
-        width: 60px;
-        height: 60px;
+        width: 120px;
+        height: 120px;
         border: 2.5px solid white;
     }
 
     .secondCircle {
-        left: 12.5%;
-        width: 60px;
-        height: 60px;
+        left: 10%;
+        width: 120px;
+        height: 120px;
         border: 2.5px solid rgba(186, 230, 253, 1);
     }
 
     .thirdCircle {
-        left: 23%;
-        width: 60px;
-        height: 60px;
+        left: 20%;
+        width: 120px;
+        height: 120px;
         border: 2.5px solid white;
     }
 
 
     .bottomMenuIcon {
-        height: 40px;
+        height: 50px;
     }
 }
 
-@media (max-width: 380px){
+@media (max-width: 500px) {
+    .mobileAppContent {
+        padding: 0% 7% 0 7%;
+        height: 390px;
+
+        .firstImage {
+            margin-bottom: 0%;
+            display: flex;
+            left: 10%;
+            width: 80%;
+            position: absolute;
+            top: 5%;
+        }
+    
+        .secondImage {
+            left: 10%;
+            position: absolute;
+            top: 36%
+        }
+    
+        .thirdImage {
+            left: 10%;
+            position: absolute;
+            top: 60%;
+        }
+    
+        .featureCardsContainer {
+            display: flex;
+            justify-content: space-around;
+            top: 65%;
+            left: 10%;
+            height: 110px;
+            position: absolute;
+        }
+    
+        .featureCardCircle {
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+        }
+    
+        .firstCircle {
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border: 2.5px solid white;
+        }
+    
+        .secondCircle {
+            left: 12.5%;
+            width: 60px;
+            height: 60px;
+            border: 2.5px solid rgba(186, 230, 253, 1);
+        }
+    
+        .thirdCircle {
+            left: 23%;
+            width: 60px;
+            height: 60px;
+            border: 2.5px solid white;
+        }
+    
+    
+        .bottomMenuIcon {
+            height: 40px;
+        }
+
+    }  
+}
+
+@media (max-width: 380px) {
     .firstCircle {
         left: 0;
         width: 50px;
@@ -202,29 +274,31 @@
     }
 }
 
-@media (max-width: 350px){
-    .mobileAppContent{
+@media (max-width: 350px) {
+    .mobileAppContent {
         height: 220px;
     }
 
     .firstCircle {
-       display: none;
+        display: none;
     }
 
     .secondCircle {
         display: none;
     }
+
     .thirdCircle {
-       display: none;
+        display: none;
     }
 }
 
-@media (max-width: 200px){
-    .mobileAppContent{
+@media (max-width: 200px) {
+    .mobileAppContent {
         height: 140px;
         border-radius: 20px;
     }
-    .bottomMenu{
+
+    .bottomMenu {
         display: none;
     }
 }
