@@ -103,7 +103,8 @@ To run the project locally, follow these steps:
 
 ## Deployment
 
-In the future, it may be deployed to a platform like Vercel to allow for easy access and demonstration.
+Deployment is made with Vercel.
+- **Deploy**: [Buzzvel UI](https://buzzvel-ui-reproduction.vercel.app/)
 
 ## Video Walkthrough
 
