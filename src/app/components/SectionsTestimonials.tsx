@@ -113,7 +113,7 @@ export default function SectionTestimonials() {
                             className={`${styles.cardsWrapper}`}
                             style={{
                                 transform: `translateX(-${currentIndex * cardWidth}px)`, // Move cards based on current index
-                                transition: 'transform 0.5s ease-in-out', // Smooth transition for movement
+                                transition: 'transform 0.8s ease-in-out', // Smooth transition for movement
                             }}
                         >
                             {cardsData.map((card, index) => (
