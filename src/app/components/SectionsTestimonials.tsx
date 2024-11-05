@@ -49,7 +49,7 @@ export default function SectionTestimonials() {
     const cardRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        // Função para atualizar a largura do card incluindo o gap
+        // Function to update the card width including the gap
         const updateCardWidth = () => {
             if (cardRef.current) {
                 const width = cardRef.current.offsetWidth;
